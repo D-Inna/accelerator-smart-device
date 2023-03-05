@@ -12,13 +12,13 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container header">
+    <header class="header">
+      <div class="container">
         <a class="header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <!-- <picture> -->
-          <!-- <source media="(max-width: 767px)" srcset="./img/logo-mobile.svg"> -->
+          <picture>
+          <source media="(max-width: 767px)" srcset="./img/logo-mobile.svg">
           <img src="./img/logo.svg" width="215" height="55" alt="Логотип компании Smart Device.">
-          <!-- </picture> -->
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -32,10 +32,13 @@
                 </svg>
                 <span class="user-list__text">info@sd.ru</span>
               </a>
-              <a class="user-list__login" href="tel:+74950005252">+7 (495) 000 52 52
+              <a class="user-list__login" href="tel:+74950005252">
                 <svg class="user-list__login-icon" aria-hidden="true" focusable="false" width="20" height="20">
                   <use href="./img/sprite.svg#phone"></use>
                 </svg>
+                <span class="user-list__text">
+                  +7 (495) 000 52 52
+                </span>
               </a>
             </div>
             <div class="main-nav__button">
@@ -319,7 +322,7 @@
 
   <!-- Модалки -->
 
-  <div class="modal-container">
+  <!-- <div class="modal-container">
     <h2>Закажите звонок</h2>
     <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
     <form action="https://echo.htmlacademy.ru/" method="post">
@@ -346,7 +349,7 @@
         </label>
       </p>
     </form>
-  </div>
+  </div> -->
 
 
   <div class="modal modal--preload" data-modal="feedback">

@@ -74,6 +74,20 @@
   }
 }
 
+@mixin text-mono {
+  font-family: $ff-mono;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+}
+
+@mixin title-roboto {
+  font-family: $ff-roboto;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

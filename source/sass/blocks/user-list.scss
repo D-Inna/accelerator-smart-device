@@ -1,0 +1,29 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.user-list__login {
+  @include text-mono;
+  line-height: 18px;
+  display: block;
+  color: $color-text;
+  min-width: 225px;
+  padding-right: 30px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 40px;
+  }
+}
+
+.user-list__login:last-child {
+  padding-right: 0;
+}
+
+.user-list__text {
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}

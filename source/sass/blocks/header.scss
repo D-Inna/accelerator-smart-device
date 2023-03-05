@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1024px;
+  margin: 0 auto;
+  background-image: $header-color;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $vp-1023) {
+    padding-left: 50px;
+    padding-right: 70px;
+    max-width: 1023px;
+    min-width: 768px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 26px;
+    padding-right: 35px;
+    max-width: 767px;
+    min-width: 320px;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  display: block;
+  padding-top: 30px;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 15px;
+    width: 35px;
+    height: 35px;
+  }
+}

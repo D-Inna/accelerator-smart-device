@@ -392,6 +392,30 @@ template {
   src: url("../fonts/.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/mono-regular.woff2") format("woff2"), url("../../fonts/mono-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../../fonts/roboto-condensed-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../../fonts/roboto-condensed-bold.woff") format("woff");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -613,10 +637,15 @@ button,
 }
 
 .container {
-  width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .btn {
@@ -1273,6 +1302,88 @@ button,
   color: #15ab07;
 }
 
+.header {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1024px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
+  background-image: -o-linear-gradient(top, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
+  background-image: linear-gradient(180deg, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  display: block;
+  padding-top: 30px;
+}
+
+.main-nav {
+  min-height: 120px;
+  padding-top: 35px;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-nav__button-link {
+  display: block;
+  color: #f2f5f6;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16.5px;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  min-width: 160px;
+  border: 1px solid #f2f5f6;
+  border-radius: 3px;
+}
+
+.user-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.user-list__login {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  line-height: 18px;
+  display: block;
+  color: #f2f5f6;
+  min-width: 225px;
+  padding-right: 30px;
+}
+
+.user-list__login:last-child {
+  padding-right: 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1314,23 +1425,51 @@ button,
   }
 */
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
+@media (min-width: 1024px) {
+  .main-nav {
+    min-width: 785px;
   }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header {
+    padding-left: 50px;
+    padding-right: 70px;
+    max-width: 1023px;
+    min-width: 768px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    padding-top: 20px;
+  }
+
+  .main-nav {
+    min-height: 100px;
+    padding-top: 10px;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+
+  .user-list__login {
+    min-width: 40px;
+  }
+
+  .user-list__text {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-  }
-
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1342,6 +1481,26 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header {
+    padding-left: 26px;
+    padding-right: 35px;
+    max-width: 767px;
+    min-width: 320px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    padding-top: 15px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .main-nav {
+    min-height: 70px;
   }
 }
 
