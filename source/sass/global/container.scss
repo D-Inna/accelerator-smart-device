@@ -18,10 +18,13 @@
 // }
 
 .container {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @media (min-width: $vp-1024) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 160px;
+    margin: 0 auto;
+    width: 1024px;
+  }
 
   @media (max-width: $vp-1023) {
     width: 100%;

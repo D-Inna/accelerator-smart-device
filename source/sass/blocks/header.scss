@@ -1,11 +1,12 @@
 .header {
   width: 100%;
+  // position: fixed;
+  // top: 0;
   max-width: 1920px;
   min-width: 1024px;
   margin: 0 auto;
   background-image: $header-color;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0 20px;
 
   @media (max-width: $vp-1023) {
     padding-left: 50px;
@@ -20,6 +21,13 @@
     padding-right: 35px;
     max-width: 767px;
     min-width: 320px;
+    justify-content: space-between;
+  }
+}
+
+.header__container {
+  @media (max-width: $vp-1023) {
+    display: flex;
     justify-content: space-between;
   }
 }

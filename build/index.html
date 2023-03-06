@@ -13,17 +13,14 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <a class="header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="container header__container">
+        <a class="header__logo" href="#">
           <picture>
-          <source media="(max-width: 767px)" srcset="./img/logo-mobile.svg">
-          <img src="./img/logo.svg" width="215" height="55" alt="Логотип компании Smart Device.">
+            <source media="(max-width: 767px)" srcset="./img/logo-mobile.svg">
+            <img src="./img/logo.svg" width="215" height="55" alt="Логотип компании Smart Device.">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
             <div class="main-nav__list user-list">
               <a class="user-list__login" href="#">
@@ -114,6 +111,13 @@
             Devices
             применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
             СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+
+          <!-- <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых
+            продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20
+            городов присутствия.
+            Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании.
+            Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p> -->
+
           <button type="button">Подробнее</button>
         </div>
       </section>
@@ -203,11 +207,12 @@
         </div>
       </section>
     </main>
-    <footer>
 
-      <div class="container main-footer">
+    <footer class="main-footer">
+
+      <div class="container">
         <div class="main-footer__social social">
-          <a class="main-footer__logo">
+          <a class="main-footer__logo" href="#">
             <img class="main-footer__logo-icon" src="./img/logo.svg" width="215" height="55"
               alt="Логотип компании Smart Device.">
           </a>
@@ -239,8 +244,11 @@
           </ul>
         </div>
 
-        <div class="main-footer__menu footer-menu">
+        <div class="main-footer__menu footer-menu footer-menu--closed footer-menu--nojs">
           <h3 class="footer-menu__title">Разделы сайта</h3>
+          <button class="footer-menu__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="footer-menu__list">
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="#">
@@ -254,7 +262,7 @@
             </li>
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="#">
-                Производство печатных плат
+                Производство печатных <br> плат
               </a>
             </li>
             <li class="footer-menu__item">
@@ -282,7 +290,7 @@
             </li>
           </ul>
 
-          <h3 class="footer-menu__title">Наш офис</h3>
+          <h3 class="footer-menu__title footer-menu__title--address">Наш офис</h3>
           <ul class="footer-menu__list footer-menu__list--address">
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="#">

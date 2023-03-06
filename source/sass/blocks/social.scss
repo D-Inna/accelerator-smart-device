@@ -1,0 +1,30 @@
+.social {
+  @media (max-width: $vp-1023) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 30px;
+
+  @media (max-width: $vp-1023) {
+    grid-column: 3/4;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-column: 1/2;
+  }
+}
+
+.social__item {
+  padding-right: 15px;
+}
