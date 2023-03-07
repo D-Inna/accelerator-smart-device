@@ -1378,6 +1378,10 @@ button,
   padding-top: 50px;
 }
 
+.social {
+  padding-top: 50px;
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1456,6 +1460,126 @@ button,
 
 .footer-menu__item {
   padding-bottom: 10px;
+}
+
+.main-container {
+  color: #041827;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.promo {
+  position: relative;
+  min-height: 788px;
+  padding-top: 10%;
+  background-color: #041827;
+  z-index: -2;
+  padding-bottom: 18%;
+}
+
+.promo__image {
+  position: absolute;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 105%;
+  z-index: -1;
+  top: -40px;
+}
+
+.promo__title {
+  color: #f2f5f6;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-left: 25%;
+}
+
+.promo__text {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f6;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-left: 25%;
+}
+
+.promo__link {
+  display: block;
+  width: 410px;
+  color: #f2f5f6;
+  padding: 15px 25px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  margin: 0;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.advantages {
+  padding: 7% 18% 0;
+}
+
+.advantages__wrapper {
+  padding-bottom: 7%;
+}
+
+.advantages__wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.advantages__wrapper li {
+  padding: 40px 45px;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-left: 5px solid #00b2ff;
+}
+
+.advantages__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #00b2ff;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.advantages__wrapper p {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #041827;
+  margin: 0;
+  padding: 0;
 }
 
 /* @mixin hover-focus {
@@ -1576,6 +1700,7 @@ button,
   }
 
   .social {
+    padding: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
@@ -1617,6 +1742,45 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+  }
+
+  .main-container {
+    max-width: 1023px;
+    min-width: 768px;
+  }
+
+  .promo {
+    padding-bottom: 40%;
+  }
+
+  .promo__image {
+    -o-object-position: 100% 50%;
+    object-position: 100% 50%;
+    width: 100%;
+  }
+
+  .promo__title {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 20px;
+    padding-left: 10%;
+  }
+
+  .promo__text {
+    margin-bottom: 50px;
+    padding-left: 10%;
+  }
+
+  .promo__link {
+    margin-left: 10%;
+  }
+
+  .advantages {
+    padding: 6% 5% 0;
+  }
+
+  .advantages__wrapper {
+    padding-bottom: 6%;
   }
 }
 
@@ -1689,7 +1853,7 @@ button,
     position: absolute;
     content: "";
     height: 1px;
-    background-color: rgba(248, 253, 255, 0.7);
+    background-color: #ebebeb;
     width: 100%;
     left: 0;
     top: 0;
@@ -1707,6 +1871,75 @@ button,
 
   .footer-menu__list {
     padding: 0 25px;
+  }
+
+  .main-container {
+    max-width: 767px;
+    min-width: 320px;
+  }
+
+  .promo {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    min-height: 490px;
+  }
+
+  .promo__image {
+    -o-object-position: 25% 50%;
+    object-position: 25% 50%;
+    height: 110%;
+  }
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 42px;
+    padding-right: 65%;
+  }
+
+  .promo__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .promo__text br {
+    display: none;
+  }
+
+  .promo__link {
+    font-size: 14px;
+    line-height: 16px;
+    width: 270px;
+  }
+
+  .promo__link-mobile {
+    display: none;
+  }
+
+  .advantages {
+    padding: 6% 2% 0;
+  }
+
+  .advantages__wrapper {
+    padding-bottom: 1%;
+  }
+
+  .advantages__wrapper ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__wrapper li {
+    padding: 30px;
+  }
+
+  .advantages__wrapper h3 {
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  .advantages__wrapper p {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
