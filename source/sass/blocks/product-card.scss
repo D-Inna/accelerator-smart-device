@@ -1,0 +1,116 @@
+.product-card {
+  background-color: $color-footer;
+  padding: 3% 18% 5%;
+  min-height: 960px;
+
+  @media (max-width: $vp-1023) {
+    padding: 6% 5% 5%;
+    min-height: 1080px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 6% 4% 8%;
+    min-height: 1050px;
+  }
+}
+
+.product-card h1 {
+  @include title-roboto;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 50px;
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.product-card h2 {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    @include title-roboto;
+    display: block;
+    color: #ffffff;
+    margin: 20px 0 40px;
+    font-size: 28px;
+    line-height: 40px;
+    padding-right: 12%;
+  }
+}
+
+.product-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.product-card li {
+  position: relative;
+  padding: 14% 40% 0 13%;
+
+  @media (max-width: $vp-1023) {
+    min-height: 250px;
+    padding: 4% 70% 0 5%;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-right: 43%;
+  }
+}
+
+.product-card img {
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  @media (max-width: $vp-1023) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product-card h3 {
+  @include title-roboto;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  z-index: 2;
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+  }
+}
+
+.product-card button {
+  position: absolute;
+  z-index: 2;
+  top: 590px;
+  right: 58px;
+  width: 60px;
+  height: 60px;
+  background-color: $background-blue;
+  border: none;
+
+  @media (max-width: $vp-1023) {
+    top: 190px;
+    right: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 40px;
+    height: 40px;
+    top: 210px;
+  }
+}
