@@ -176,38 +176,42 @@
         </ul>
       </section>
       <section class="form">
-        <picture>
-          <!-- <source type="image/webp" srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane@2x.webp 2x"> -->
-          <img src="./img/paper-airplane.png" width="510" height="285" srcset="./img/paper-airplane@2x.png 2x"
-            alt="Бумажный самолет.">
-        </picture>
-        <div class="form__modal-auth">
-          <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
-          <span>Мы&nbsp;проконсультируем Вас бесплатно</span>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div>
+        <div class="form__wrapper">
+          <picture>
+            <!-- <source type="image/webp" srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane@2x.webp 2x"> -->
+            <img src="./img/paper-airplane.png" width="510" height="285" srcset="./img/paper-airplane@2x.png 2x"
+              alt="Бумажный самолет.">
+          </picture>
+          <div class="form__modal-auth">
+            <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
+            <span>Мы&nbsp;проконсультируем Вас бесплатно</span>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__inner">
+                <p>
+                  <label>
+                    <input type="text" name="name" placeholder="Имя">
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="tel" name="field-phone" placeholder="Телефон" required>
+                  </label>
+                </p>
+              </div>
               <p>
-                <label>
-                  <input type="text" name="name" placeholder="Имя">
-                </label>
+                <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
               </p>
-              <p>
-                <label>
-                  <input type="tel" name="field-phone" placeholder="Телефон" required>
-                </label>
-              </p>
-            </div>
-            <p>
-              <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
-            </p>
-            <a href="#">Задать вопрос</a>
-            <p>
-              <label>
-                <input type="checkbox" name="firm-storе">
-                <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-              </label>
-            </p>
-          </form>
+              <div class="form__consent">
+                <a href="#">Задать вопрос</a>
+                <p>
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="firm-storе" checked>
+                    <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
+                  </label>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
