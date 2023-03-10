@@ -1,0 +1,44 @@
+.accordion {
+  //max-width: 500px;
+  min-width: 320px;
+  max-width: 767px;
+  margin: 0 auto;
+  color: #ffffff;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  &__element.is-active > &__button::after {
+    opacity: 0;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    padding: 0;
+  }
+}
+
+.accordion__element--address {
+  @media (max-width: $vp-767) {
+    position: relative;
+  }
+}

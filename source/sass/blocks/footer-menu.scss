@@ -15,6 +15,7 @@
 
   @media (max-width: $vp-767) {
     display: block;
+    position: relative;
   }
 }
 
@@ -30,6 +31,7 @@
   @media (max-width: $vp-767) {
     position: relative;
     padding: 20px 25px;
+    margin: 0;
 
     &::after {
       position: absolute;
@@ -53,8 +55,39 @@
     height: 15px;
     cursor: pointer;
     border: none;
-    //background-color: transparent;
+    background-color: transparent;
     padding: 0;
+
+    top: 54px;
+    right: 40px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      right: 0;
+      width: 15px;
+      height: 1px;
+      background-color: #f8fdff;
+    }
+
+    &::before {
+      transform: rotate(0deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.footer-menu__toggle--address {
+  @media (max-width: $vp-767) {
+    position: absolute;
+    top: 20px;
+    right: 40px;
   }
 }
 
@@ -64,6 +97,10 @@
 
   @media (max-width: $vp-1023) {
     grid-column: 2/3;
+  }
+
+  @media (max-width: $vp-767) {
+    position: relative;
   }
 }
 
