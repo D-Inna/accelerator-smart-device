@@ -729,9 +729,9 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 610px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b3ff;
 }
 
 .modal__close-btn {
@@ -774,6 +774,195 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__close-btn svg {
+  fill: #ffffff;
+  margin-top: 33px;
+}
+
+.modal__content h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.modal__content p {
+  margin: 20px 0 35px;
+}
+
+.modal__content span {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.modal__content form {
+  min-width: 405px;
+  margin-top: 25px;
+}
+
+.modal__content input {
+  width: 100%;
+  border: none;
+  padding: 25px 15px;
+  background-color: #008bc6;
+}
+
+.modal__content input::-webkit-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content input::-moz-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content input:-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content input::-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content input::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content textarea {
+  width: 100%;
+  resize: vertical;
+  background-color: #008bc6;
+  border: none;
+  padding: 25px 15px;
+}
+
+.modal__content textarea::-webkit-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content textarea::-moz-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content textarea:-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content textarea::-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__content textarea::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal__consent p {
+  margin: 0;
+  padding-top: 0;
+  padding-left: 30px;
+}
+
+.modal__consent button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #041427;
+  color: #ffffff;
+  padding: 15px 25px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.modal__consent label {
+  position: relative;
+}
+
+.modal__consent span {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 0;
+}
+
+.modal__consent span::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.modal__consent span br {
+  display: none;
+}
+
+.modal__consent input[type=checkbox]:checked + span::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 6px;
+  top: 4px;
+  left: -22px;
+  background: url("../../img/check.svg") no-repeat;
 }
 
 .custom-input,

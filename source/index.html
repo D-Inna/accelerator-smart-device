@@ -39,7 +39,7 @@
               </a>
             </div>
             <div class="main-nav__button">
-              <a class="main-nav__button-link" href="#">
+              <a class="main-nav__button-link" href="#" data-open-modal="success">
                 Заказать звонок
               </a>
             </div>
@@ -57,7 +57,7 @@
         </picture>
         <h1 class="promo__title">Печатные платы</h1>
         <p class="promo__text">производство и&nbsp;монтаж, поставка комплектующих, <br> блоков и&nbsp;модулей</p>
-        <a class="promo__link" href="#feedback">
+        <a class="promo__link" href="#form-feedback">
           <span class="promo__link-mobile">Получить</span>
           бесплатную консультацию
         </a>
@@ -178,7 +178,7 @@
           </li>
         </ul>
       </section>
-      <section class="form" id="feedback">
+      <section class="form" id="form-feedback">
         <div class="form__wrapper">
           <picture>
             <source type="image/webp" srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane@2x.webp 2x">
@@ -346,72 +346,49 @@
 
         </div>
     </footer>
-  </div>
 
-  <!-- <div class="container">
-      <h1>Тестовая страница.</h1>
-      <p>На данной странице показан пример модальных окон.</p>
-      <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-      <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-      <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-    </div> -->
+  </div>
 
   <!-- Модалки -->
 
-  <!-- <div class="modal-container">
-    <h2>Закажите звонок</h2>
-    <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
-    <form action="https://echo.htmlacademy.ru/" method="post">
-      <div>
-        <p>
-          <label>
-            <input type="text" name="name" placeholder="Имя">
-          </label>
-        </p>
-        <p>
-          <label>
-            <input type="tel" name="field-phone" placeholder="Телефон" required>
-          </label>
-        </p>
-      </div>
-      <p>
-        <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
-      </p>
-      <button type="submit">Отправить</button>
-      <p>
-        <label>
-          <input type="checkbox" name="firm-storе">
-          <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-        </label>
-      </p>
-    </form>
-  </div> -->
-
-
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
   <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
     <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
       <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <!-- <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p> -->
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
           <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
+            <use xlink:href="./img/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <h2>Закажите звонок</h2>
+        <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>
+            <label>
+              <input type="text" name="name" placeholder="Имя" required>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="tel" name="field-phone" placeholder="Телефон" required>
+            </label>
+          </p>
+          <p>
+            <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
+          </p>
+          <div class="modal__consent">
+            <button type="submit">Отправить</button>
+            <p>
+              <label>
+                <input class="visually-hidden" type="checkbox" name="firm-storе" checked required>
+                <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
+              </label>
+            </p>
+          </div>
+        </form>
+
       </div>
     </div>
   </div>
