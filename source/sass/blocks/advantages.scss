@@ -120,4 +120,9 @@
   background-color: $background-color;
   text-align: center;
   min-width: 180px;
+  cursor: pointer;
+}
+
+.advantages__wrapper-more {
+  display: none;
 }

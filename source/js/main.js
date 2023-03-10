@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './accordion/init-accordion';
+import {showMore} from './modules/show-more';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
 
     initAccordions();
+    showMore();
 
     const form = new Form();
     window.form = form;

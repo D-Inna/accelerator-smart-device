@@ -1632,6 +1632,11 @@ button,
   background-color: #f8fdff;
   text-align: center;
   min-width: 180px;
+  cursor: pointer;
+}
+
+.advantages__wrapper-more {
+  display: none;
 }
 
 .product-card {
