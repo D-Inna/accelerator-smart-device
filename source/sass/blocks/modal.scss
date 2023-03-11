@@ -191,6 +191,14 @@
   margin-bottom: 20px;
 }
 
+.modal__consent button:hover {
+  opacity: 0.8;
+}
+
+.modal__consent button:active {
+  opacity: 0.7;
+}
+
 .modal__consent label {
   position: relative;
 }

@@ -925,6 +925,14 @@ button,
   margin-bottom: 20px;
 }
 
+.modal__consent button:hover {
+  opacity: 0.8;
+}
+
+.modal__consent button:active {
+  opacity: 0.7;
+}
+
 .modal__consent label {
   position: relative;
 }
@@ -1499,6 +1507,15 @@ button,
   padding-top: 30px;
 }
 
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.7;
+}
+
+.header__logo:active {
+  opacity: 0.3;
+}
+
 .main-nav {
   min-height: 120px;
   padding-top: 35px;
@@ -1529,6 +1546,17 @@ button,
   border-radius: 3px;
 }
 
+.main-nav__button-link:hover {
+  color: #00b2ff;
+  border-color: #00b2ff;
+}
+
+.main-nav__button-link:active {
+  color: #00b2ff;
+  border-color: #00b2ff;
+  opacity: 0.6;
+}
+
 .user-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1557,6 +1585,23 @@ button,
   padding-right: 0;
 }
 
+.user-list__login-icon {
+  fill: #00b2ff;
+}
+
+.user-list__login:hover .user-list__login-icon,
+.user-list__login:hover .user-list__text {
+  fill: #0c86bb;
+  color: #0c86bb;
+}
+
+.user-list__login:active .user-list__login-icon,
+.user-list__login:active .user-list__text {
+  fill: #0c86bb;
+  color: #0c86bb;
+  opacity: 0.6;
+}
+
 .main-footer {
   width: 100%;
   max-width: 1920px;
@@ -1569,6 +1614,15 @@ button,
 
 .main-footer__logo {
   padding-top: 50px;
+}
+
+.main-footer__logo:hover,
+.main-footer__logo:focus {
+  opacity: 0.7;
+}
+
+.main-footer__logo:active {
+  opacity: 0.3;
 }
 
 .social {
@@ -1586,6 +1640,14 @@ button,
 
 .social__item {
   padding-right: 15px;
+}
+
+.social__link:hover .social__network {
+  opacity: 0.8;
+}
+
+.social__link:active .social__network {
+  opacity: 0.7;
 }
 
 .footer-menu {
@@ -1732,6 +1794,15 @@ button,
   cursor: pointer;
 }
 
+.promo__link:hover {
+  background-color: #0b9ede;
+}
+
+.promo__link:active {
+  background-color: #0b9ede;
+  opacity: 0.8;
+}
+
 .advantages {
   padding: 7% 18% 5%;
   background-color: #f8fdff;
@@ -1759,6 +1830,17 @@ button,
   border-left: 5px solid #00b2ff;
 }
 
+.advantages__wrapper li:hover {
+  background-color: #00b2ff;
+}
+
+.advantages__wrapper li:hover h3,
+.advantages__wrapper li:hover p,
+.advantages__wrapper li:hover svg {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
 .advantages__wrapper h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -1780,6 +1862,10 @@ button,
   color: #041827;
   margin: 0;
   padding: 0;
+}
+
+.advantages__wrapper svg {
+  fill: #00b2ff;
 }
 
 .advantages__wrapper-info {
@@ -1822,6 +1908,15 @@ button,
   text-align: center;
   min-width: 180px;
   cursor: pointer;
+}
+
+.advantages__wrapper-info button:hover {
+  color: #0b9ede;
+  border-color: #0b9ede;
+}
+
+.advantages__wrapper-info button:active {
+  opacity: 0.7;
 }
 
 .advantages__wrapper-more {
@@ -1894,6 +1989,15 @@ button,
   height: 60px;
   background-color: #00b2ff;
   border: none;
+}
+
+.product-card button:hover {
+  background-color: #0b9ede;
+}
+
+.product-card button:active {
+  background-color: #0b9ede;
+  opacity: 0.6;
 }
 
 .form {
@@ -2079,6 +2183,14 @@ button,
   min-width: 265px;
   text-align: center;
   border: none;
+}
+
+.form__consent button:hover {
+  opacity: 0.8;
+}
+
+.form__consent button:active {
+  opacity: 0.6;
 }
 
 .form__consent label {

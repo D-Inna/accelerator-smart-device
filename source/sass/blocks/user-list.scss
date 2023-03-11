@@ -27,3 +27,20 @@
     display: none;
   }
 }
+
+.user-list__login-icon {
+  fill: $background-blue;
+}
+
+.user-list__login:hover .user-list__login-icon,
+.user-list__login:hover .user-list__text {
+  fill: #0c86bb;
+  color: #0c86bb;
+}
+
+.user-list__login:active .user-list__login-icon,
+.user-list__login:active .user-list__text {
+  fill: #0c86bb;
+  color: #0c86bb;
+  opacity: 0.6;
+}

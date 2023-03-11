@@ -118,6 +118,15 @@
   }
 }
 
+.promo__link:hover {
+  background-color: #0b9ede;
+}
+
+.promo__link:active {
+  background-color: #0b9ede;
+  opacity: 0.8;
+}
+
 .promo__link-mobile {
   @media (max-width: $vp-767) {
     display: none;

@@ -31,3 +31,11 @@
 .social__item {
   padding-right: 15px;
 }
+
+.social__link:hover .social__network {
+  opacity: 0.8;
+}
+
+.social__link:active .social__network {
+  opacity: 0.7;
+}

@@ -36,6 +36,17 @@
   border-radius: 3px;
 }
 
+.main-nav__button-link:hover {
+  color: $background-blue;
+  border-color: $background-blue;
+}
+
+.main-nav__button-link:active {
+  color: $background-blue;
+  border-color: $background-blue;
+  opacity: 0.6;
+}
+
 .main-nav__button {
   @media (max-width: $vp-1023) {
     display: none;

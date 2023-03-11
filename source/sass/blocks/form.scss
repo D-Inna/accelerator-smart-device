@@ -159,6 +159,14 @@
   }
 }
 
+.form__consent button:hover {
+  opacity: 0.8;
+}
+
+.form__consent button:active {
+  opacity: 0.6;
+}
+
 .form__consent label {
   position: relative;
 }
