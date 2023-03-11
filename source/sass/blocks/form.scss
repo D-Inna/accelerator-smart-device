@@ -17,7 +17,7 @@
   min-height: 840px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 115px;
+  gap: 65px;
 
   @media (max-width: $vp-1023) {
     display: block;
@@ -68,7 +68,6 @@
 }
 
 .form__modal-auth form {
-  min-width: 580px;
   margin-top: 25px;
 
   @media (max-width: $vp-1023) {
@@ -198,5 +197,5 @@
   height: 6px;
   top: 23px;
   left: -28px;
-  background: url("../../img/check.svg") no-repeat;
+  background: url("../img/check.svg") no-repeat;
 }

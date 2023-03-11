@@ -385,18 +385,10 @@ template {
 }
 
 @font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "";
-  font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/mono-regular.woff2") format("woff2"), url("../../fonts/mono-regular.woff") format("woff");
+  src: url("../fonts/mono-regular.woff2") format("woff2"), url("../fonts/mono-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -404,7 +396,7 @@ template {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../../fonts/roboto-condensed-regular.woff") format("woff");
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -412,7 +404,7 @@ template {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../../fonts/roboto-condensed-bold.woff") format("woff");
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -1729,8 +1721,8 @@ button,
 }
 
 .promo {
-  min-height: 788px;
-  padding-top: 10%;
+  min-height: 760px;
+  padding-top: 12%;
   background-color: #041827;
   z-index: -2;
   padding-bottom: 18%;
@@ -1743,7 +1735,7 @@ button,
   object-fit: cover;
   height: 880px;
   z-index: 1;
-  top: -40px;
+  top: 0;
 }
 
 .promo__title {
@@ -1951,6 +1943,7 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
+  gap: 85px;
 }
 
 .product-card li {
@@ -1965,6 +1958,7 @@ button,
   z-index: 1;
   top: 0;
   left: 0;
+  min-height: 650px;
 }
 
 .product-card h3 {
@@ -1984,7 +1978,7 @@ button,
   position: absolute;
   z-index: 2;
   top: 590px;
-  right: 58px;
+  right: 4px;
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
@@ -2014,7 +2008,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 115px;
+  gap: 65px;
 }
 
 .form__wrapper img {
@@ -2046,7 +2040,6 @@ button,
 }
 
 .form__modal-auth form {
-  min-width: 580px;
   margin-top: 25px;
 }
 
@@ -2227,7 +2220,7 @@ button,
   height: 6px;
   top: 23px;
   left: -28px;
-  background: url("../../img/check.svg") no-repeat;
+  background: url("../img/check.svg") no-repeat;
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {
