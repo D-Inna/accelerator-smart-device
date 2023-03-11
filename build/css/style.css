@@ -791,7 +791,7 @@ button,
   margin-bottom: 15px;
 }
 
-.modal__content p {
+.modal__content div {
   margin: 20px 0 35px;
 }
 
@@ -904,7 +904,7 @@ button,
   color: #ffffff;
 }
 
-.modal__consent p {
+.modal__consent div {
   margin: 0;
   padding-top: 0;
   padding-left: 30px;
@@ -1484,7 +1484,7 @@ button,
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   max-width: 1920px;
   min-width: 1024px;
   margin: 0 auto;
@@ -1928,7 +1928,7 @@ button,
   margin-bottom: 15px;
 }
 
-.form__modal-auth p {
+.form__modal-auth div {
   margin: 20px 0 35px;
 }
 
@@ -1954,7 +1954,7 @@ button,
   gap: 25px;
 }
 
-.form__inner p {
+.form__inner div {
   margin: 0;
 }
 
@@ -2061,13 +2061,13 @@ button,
   gap: 50px;
 }
 
-.form__consent p {
+.form__consent div {
   margin: 0;
   padding-top: 0;
   padding-left: 30px;
 }
 
-.form__consent a {
+.form__consent button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -2078,6 +2078,7 @@ button,
   padding: 15px 25px;
   min-width: 265px;
   text-align: center;
+  border: none;
 }
 
 .form__consent label {
@@ -2239,6 +2240,7 @@ button,
   }
 
   .header {
+    position: static;
     padding-left: 50px;
     padding-right: 70px;
     max-width: 1023px;
@@ -2692,7 +2694,7 @@ button,
     display: block;
   }
 
-  .form__inner p {
+  .form__inner div {
     margin-bottom: 20px;
   }
 
@@ -2700,7 +2702,7 @@ button,
     display: block;
   }
 
-  .form__consent a {
+  .form__consent button {
     display: block;
     min-width: 270px;
     margin-bottom: 25px;

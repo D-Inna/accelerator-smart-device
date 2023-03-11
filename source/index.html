@@ -185,33 +185,33 @@
             <img src="./img/paper-airplane.png" width="510" height="285" srcset="./img/paper-airplane@2x.png 2x"
               alt="Бумажный самолет.">
           </picture>
-          <div class="form__modal-auth">
+          <div class="form__modal-auth" data-form-validate="data-form-validate" data-callback="base">
             <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
             <span>Мы&nbsp;проконсультируем Вас бесплатно</span>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__inner">
-                <p>
+                <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                   <label>
                     <input type="text" name="name" placeholder="Имя" required>
                   </label>
-                </p>
-                <p>
+                </div>
+                <div data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
                   <label>
                     <input type="tel" name="field-phone" placeholder="Телефон" required>
                   </label>
-                </p>
+                </div>
               </div>
-              <p>
+              <div data-validate-type="text">
                 <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
-              </p>
+              </div>
               <div class="form__consent">
-                <a href="#">Задать вопрос</a>
-                <p>
+                <button type="submit">Задать вопрос</button>
+                <div data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
                   <label>
-                    <input class="visually-hidden" type="checkbox" name="firm-storе" checked required>
+                    <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
                     <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
                   </label>
-                </p>
+                </div>
               </div>
             </form>
           </div>
@@ -354,7 +354,7 @@
   <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal="data-close-modal"></div>
-      <div class="modal__content">
+      <div class="modal__content" data-form-validate="data-form-validate" data-callback="base">
         <!-- <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p> -->
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
           <svg width="15" height="15">
@@ -365,27 +365,27 @@
         <h2>Закажите звонок</h2>
         <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <p>
+          <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
             <label>
               <input type="text" name="name" placeholder="Имя" required>
             </label>
-          </p>
-          <p>
+          </div>
+          <div data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
             <label>
               <input type="tel" name="field-phone" placeholder="Телефон" required>
             </label>
-          </p>
-          <p>
+          </div>
+          <div data-validate-type="text">
             <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
-          </p>
+          </div>
           <div class="modal__consent">
             <button type="submit">Отправить</button>
-            <p>
+            <div data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
               <label>
-                <input class="visually-hidden" type="checkbox" name="firm-storе" checked required>
+                <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
                 <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
               </label>
-            </p>
+            </div>
           </div>
         </form>
 

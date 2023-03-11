@@ -52,7 +52,7 @@
   }
 }
 
-.form__modal-auth p {
+.form__modal-auth div {
   margin: 20px 0 35px;
 }
 
@@ -90,7 +90,7 @@
   }
 }
 
-.form__inner p {
+.form__inner div {
   margin: 0;
 
   @media (max-width: $vp-767) {
@@ -133,13 +133,13 @@
   }
 }
 
-.form__consent p {
+.form__consent div {
   margin: 0;
   padding-top: 0;
   padding-left: 30px;
 }
 
-.form__consent a {
+.form__consent button {
   font-family: $ff-roboto;
   font-size: 16px;
   line-height: 18px;
@@ -150,6 +150,7 @@
   padding: 15px 25px;
   min-width: 265px;
   text-align: center;
+  border: none;
 
   @media (max-width: $vp-767) {
     display: block;
