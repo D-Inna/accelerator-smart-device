@@ -1,8 +1,9 @@
 .user-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 10px;
+  // justify-content: space-between;
+  padding-top: 39px;
+  gap: 28px;
 }
 
 .user-list__login {
@@ -10,7 +11,6 @@
   line-height: 18px;
   display: block;
   color: $color-text;
-  min-width: 225px;
   padding-right: 30px;
 
   @media (max-width: $vp-1023) {
@@ -23,6 +23,8 @@
 }
 
 .user-list__text {
+  padding-left: 7px;
+
   @media (max-width: $vp-1023) {
     display: none;
   }

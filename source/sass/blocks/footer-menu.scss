@@ -1,10 +1,12 @@
 .footer-menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-top: 50px;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  padding-top: 40px;
 
   @media (min-width: $vp-1024) {
-    width: 710px;                  //810px?
+    //width: 710px;                  //810px?
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (max-width: $vp-1023) {
@@ -25,8 +27,9 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  grid-column: 1/2;
+  margin-bottom: 23px;
 
   @media (max-width: $vp-767) {
     position: relative;
@@ -116,8 +119,6 @@
 }
 
 .footer-menu__list--delivery {
-  grid-column: 2/3;
-
   @media (max-width: $vp-1023) {
     grid-column: 1/2;
   }
@@ -139,5 +140,5 @@
 }
 
 .footer-menu__item {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }

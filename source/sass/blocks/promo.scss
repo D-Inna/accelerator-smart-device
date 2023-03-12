@@ -1,12 +1,13 @@
 .promo {
   min-height: 760px;  //???????????????????????
-  padding-top: 12%;
+  padding-top: 16%;
   background-color: $color-footer;
-  z-index: -2;
-  padding-bottom: 18%;
+  //z-index: -2;
+  padding-bottom: 14%;
 
   @media (max-width: $vp-1023) {
-    padding-bottom: 40%;
+    min-height: 540px;
+    padding-bottom: 15%;
   }
 
   @media (max-width: $vp-767) {
@@ -44,10 +45,11 @@
   font-family: $ff-roboto;
   font-size: 80px;
   line-height: 94px;
+  letter-spacing: 6px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 40px;
-  padding-left: 25%;
+  margin-bottom: 30px;
+  padding-left: 24.7%;
 
   @media (max-width: $vp-1023) {
     font-size: 64px;
@@ -71,8 +73,8 @@
   line-height: 34px;
   color: $color-text;
   margin: 0;
-  margin-bottom: 40px;
-  padding-left: 25%;
+  margin-bottom: 48px;
+  padding-left: 24.7%;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 50px;
@@ -103,7 +105,7 @@
   background-color: $background-blue;
   border-radius: 3px;
   margin: 0;
-  margin-left: 25%;
+  margin-left: 24.7%;
   text-align: center;
   cursor: pointer;
 
@@ -128,6 +130,8 @@
 }
 
 .promo__link-mobile {
+  letter-spacing: 1px;
+
   @media (max-width: $vp-767) {
     display: none;
   }

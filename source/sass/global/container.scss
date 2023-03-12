@@ -19,11 +19,8 @@
 
 .container {
   @media (min-width: $vp-1024) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 160px;
+    display: flex;
     margin: 0 auto;
-    width: 1024px;
   }
 
   @media (max-width: $vp-1023) {

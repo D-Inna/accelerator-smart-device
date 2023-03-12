@@ -12,12 +12,12 @@
 }
 
 .form__wrapper {
-  background: linear-gradient(135deg, rgba(4, 24, 39, 0.5) 0% 50%, $background-form 50% 100%);
+  background: linear-gradient(139deg, rgba(4, 24, 39, 0.5) 0% 33.5%, $background-form 33.5% 100%);
   padding: 7% 18% 5%;
   min-height: 840px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 65px;
+  gap: 36px;
 
   @media (max-width: $vp-1023) {
     display: block;
@@ -33,7 +33,7 @@
 
 .form__wrapper img {
   display: block;
-  margin-top: 100px;
+  margin-top: 19.4%;
 
   @media (max-width: $vp-1023) {
     display: none;
@@ -43,8 +43,7 @@
 .form__modal-auth h2 {
   @include title-roboto;
   color: #ffffff;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 30px 0 12px;
 
   @media (max-width: $vp-767) {
     font-size: 30px;
@@ -53,7 +52,7 @@
 }
 
 .form__modal-auth div {
-  margin: 20px 0 35px;
+  margin: 20px 0 17px;
 }
 
 .form__modal-auth span {
@@ -68,7 +67,7 @@
 }
 
 .form__modal-auth form {
-  margin-top: 25px;
+  margin-top: 32px;
 
   @media (max-width: $vp-1023) {
     min-width: 670px;
@@ -100,7 +99,7 @@
 .form__inner input {
   width: 100%;
   border: none;
-  padding: 25px 15px;
+  padding: 18px 15px;
   background-color: #008bc6;
 }
 
@@ -114,7 +113,7 @@
   resize: vertical;
   background-color: #008bc6;
   border: none;
-  padding: 25px 15px;
+  padding: 22px 15px;
 }
 
 .form__modal-auth textarea::placeholder {
@@ -125,7 +124,8 @@
 .form__consent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 60px;
+  padding-top: 25px;
 
   @media (max-width: $vp-767) {
     display: block;
@@ -135,13 +135,14 @@
 .form__consent div {
   margin: 0;
   padding-top: 0;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .form__consent button {
   font-family: $ff-roboto;
   font-size: 16px;
   line-height: 18px;
+  letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #041427;
@@ -181,8 +182,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: 19px;
-    left: -30px;
+    top: 22px;
+    left: -27px;
     width: 15px;
     height: 15px;
     border: 1px solid #ffffff;
@@ -195,7 +196,7 @@
   content: "";
   width: 10px;
   height: 6px;
-  top: 23px;
-  left: -28px;
+  top: 26px;
+  left: -24px;
   background: url("../img/check.svg") no-repeat;
 }

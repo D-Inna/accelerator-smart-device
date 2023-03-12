@@ -1,9 +1,9 @@
 .main-nav {
   min-height: 120px;
-  padding-top: 35px;
+  padding-left: 13.2%;
 
   @media (min-width: $vp-1024) {
-    min-width: 674px;
+    //min-width: 674px;
   }
 
   @media (max-width: $vp-1023) {
@@ -19,7 +19,7 @@
 .main-nav__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .main-nav__button-link {
@@ -28,6 +28,7 @@
   font-family: $ff-roboto;
   font-size: 14px;
   line-height: 16.5px;
+  letter-spacing: 0.7px;
   font-weight: 700;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -48,6 +49,14 @@
 }
 
 .main-nav__button {
+  margin: 0;
+  margin-left: 98%;
+  margin-top: -28px;
+
+  // @media (max-width: $vp-1440) {
+  //   margin-left: 76%;
+  // }
+
   @media (max-width: $vp-1023) {
     display: none;
   }
