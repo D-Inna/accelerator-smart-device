@@ -1987,22 +1987,27 @@ button,
   z-index: 2;
 }
 
-.product-card button {
+.product-card span {
   position: absolute;
+  display: block;
   z-index: 2;
   top: 590px;
   right: 1px;
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
-  border: none;
 }
 
-.product-card button:hover {
+.product-card svg {
+  margin-left: 26px;
+  margin-top: 26px;
+}
+
+.product-card span:hover {
   background-color: #0b9ede;
 }
 
-.product-card button:active {
+.product-card span:active {
   background-color: #0b9ede;
   opacity: 0.6;
 }
@@ -2598,9 +2603,14 @@ button,
     min-height: 250px;
   }
 
-  .product-card button {
+  .product-card span {
     top: 191px;
     right: -2px;
+  }
+
+  .product-card svg {
+    margin-left: 26px;
+    margin-top: 27px;
   }
 
   .form {
@@ -2944,10 +2954,15 @@ button,
     font-size: 18px;
   }
 
-  .product-card button {
+  .product-card span {
     width: 40px;
     height: 40px;
     top: 210px;
+  }
+
+  .product-card svg {
+    margin-left: 16px;
+    margin-top: 17px;
   }
 
   .form {

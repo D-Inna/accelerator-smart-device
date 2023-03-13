@@ -55,7 +55,6 @@
       </div>
     </header>
     <main class="main-container">
-
       <section class="promo">
         <picture>
           <source type="image/webp" srcset="./img/background-image.webp 1x, ./img/background-image@2x.webp 2x">
@@ -69,7 +68,6 @@
           бесплатную консультацию
         </a>
       </section>
-
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -116,10 +114,11 @@
             1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
           <p>Наши
             поставщики&nbsp;&mdash; мировые производители
-            электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и&nbsp;комплектующие Service
-            Devices
-            применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
-            СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+            электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и&nbsp;комплектующие
+              Service
+              Devices
+              применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
+              СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
             </span></p>
           <div class="advantages__wrapper-more">
             <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
@@ -134,7 +133,6 @@
           <button type="button">Подробнее</button>
         </div>
       </section>
-
       <section class="product-card">
         <h1>Smart Device предлагает следующие товары и услуги</h1>
         <h2>Товары и услуги Smart Device</h2>
@@ -147,11 +145,11 @@
                   alt="Печатные платы.">
               </picture>
               <h3>Производство печатных плат</h3>
-              <button type="button">
+              <span>
                 <svg width="8" height="4">
                   <use href="./img/sprite.svg#arrow"></use>
                 </svg>
-              </button>
+              </span>
             </a>
           </li>
           <li>
@@ -162,11 +160,11 @@
                   alt="Печатные платы.">
               </picture>
               <h3>Монтаж печатных плат</h3>
-              <button type="button">
+              <span>
                 <svg width="8" height="4">
                   <use href="./img/sprite.svg#arrow"></use>
                 </svg>
-              </button>
+              </span>
             </a>
           </li>
           <li>
@@ -177,11 +175,11 @@
                   alt="Печатные платы.">
               </picture>
               <h3>Комплектующие для светотехники</h3>
-              <button type="button">
+              <span>
                 <svg width="8" height="4">
                   <use href="./img/sprite.svg#arrow"></use>
                 </svg>
-              </button>
+              </span>
             </a>
           </li>
         </ul>
@@ -198,12 +196,16 @@
             <span>Мы&nbsp;проконсультируем Вас бесплатно</span>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__inner">
-                <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                   <label>
                     <input type="text" name="name" placeholder="Имя" autofocus required>
                   </label>
                 </div>
-                <div data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+                <div data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required="data-required">
                   <label>
                     <input type="tel" name="field-phone" placeholder="Телефон" required>
                   </label>
@@ -216,7 +218,8 @@
                 <button type="submit">Задать вопрос</button>
                 <div data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
                   <label>
-                    <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
+                    <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement"
+                      checked required>
                     <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
                   </label>
                 </div>
@@ -226,9 +229,7 @@
         </div>
       </section>
     </main>
-
     <footer class="main-footer">
-
       <div class="container">
         <div class="main-footer__social social">
           <a class="main-footer__logo" href="#">
@@ -351,10 +352,9 @@
               </div>
             </div>
           </div>
-
         </div>
+      </div>
     </footer>
-
   </div>
 
   <!-- Модалки -->
@@ -364,7 +364,8 @@
       <div class="modal__overlay" data-close-modal="data-close-modal"></div>
       <div class="modal__content" data-form-validate="data-form-validate" data-callback="base">
         <!-- <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p> -->
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап"
+          data-close-modal="data-close-modal" data-focus="data-focus">
           <svg width="15" height="15">
             <use xlink:href="./img/sprite.svg#icon-close"></use>
           </svg>
@@ -373,12 +374,17 @@
         <h2>Закажите звонок</h2>
         <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <div data-validate-type="text" data-focus="Имя" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+          <div data-validate-type="text" data-focus="Имя" data-limitation="name"
+            data-message-base="Поле обязательно к заполнению"
+            data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
             <label>
-              <input type="text" name="name" placeholder="Имя" autofocus required>
+              <input type="text" name="name" placeholder="Имя" required>
             </label>
           </div>
-          <div data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+          <div data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+            data-message-base="Поле обязательно к заполнению"
+            data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+            data-required="data-required">
             <label>
               <input type="tel" name="field-phone" placeholder="Телефон" required>
             </label>
@@ -390,7 +396,8 @@
             <button type="submit">Отправить</button>
             <div data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
               <label>
-                <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
+                <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement" checked
+                  required>
                 <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
               </label>
             </div>
