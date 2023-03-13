@@ -22,11 +22,17 @@
 
   @media (max-width: $vp-1023) {
     grid-column: 3/4;
-    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0;
+    justify-content: end;
   }
 
   @media (max-width: $vp-767) {
     grid-column: 1/2;
+    margin-top: 4px;
+    justify-content: center;
+    padding-left: 18px;
+    margin-bottom: 10px;
   }
 }
 

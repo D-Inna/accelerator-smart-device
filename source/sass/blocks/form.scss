@@ -21,13 +21,14 @@
 
   @media (max-width: $vp-1023) {
     display: block;
-    padding: 8% 7% 10%;
+    padding: 2.3% 6.5% 10%;
     min-height: 580px;
     background: none;
   }
 
   @media (max-width: $vp-767) {
     min-height: 750px;
+    padding: 2.3% 7.5% 10%;
   }
 }
 
@@ -45,9 +46,14 @@
   color: #ffffff;
   margin: 30px 0 12px;
 
+  @media (max-width: $vp-1023) {
+    margin-bottom: 6px;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 30px;
     line-height: 42px;
+    margin: 38px 0 2px;
   }
 }
 
@@ -71,10 +77,12 @@
 
   @media (max-width: $vp-1023) {
     min-width: 670px;
+    margin-top: 23px;
   }
 
   @media (max-width: $vp-767) {
     min-width: 270px;
+    margin-top: 30px;
   }
 }
 
@@ -101,6 +109,10 @@
   border: none;
   padding: 18px 15px;
   background-color: #008bc6;
+
+  @media (max-width: $vp-1023) {
+    padding: 16px;
+  }
 }
 
 .form__inner input::placeholder {
@@ -114,6 +126,14 @@
   background-color: #008bc6;
   border: none;
   padding: 22px 15px;
+
+  @media (max-width: $vp-1023) {
+    padding: 30px 15px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 22px 15px 65px;
+  }
 }
 
 .form__modal-auth textarea::placeholder {
@@ -127,8 +147,14 @@
   gap: 60px;
   padding-top: 25px;
 
+  @media (max-width: $vp-1023) {
+    padding-top: 11px;
+    gap: 50px;
+  }
+
   @media (max-width: $vp-767) {
     display: block;
+    padding-top: 3px;
   }
 }
 
@@ -136,6 +162,10 @@
   margin: 0;
   padding-top: 0;
   padding-left: 15px;
+
+  @media (max-width: $vp-767) {
+    padding-left: 32px;
+  }
 }
 
 .form__consent button {
@@ -152,10 +182,14 @@
   text-align: center;
   border: none;
 
+  @media (max-width: $vp-1023) {
+    width: 265px;
+  }
+
   @media (max-width: $vp-767) {
     display: block;
     min-width: 270px;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
   }
 }
 
@@ -189,6 +223,15 @@
     border: 1px solid #ffffff;
     border-radius: 2px;
   }
+
+  @media (max-width: $vp-1023) {
+    padding-top: 11px;
+
+    &::after {
+      top: 17px;
+      left: -25px;
+    }
+  }
 }
 
 .form__consent input[type="checkbox"]:checked + span::before {
@@ -199,4 +242,9 @@
   top: 26px;
   left: -24px;
   background: url("../img/check.svg") no-repeat;
+
+  @media (max-width: $vp-1023) {
+    top: 22px;
+    left: -23px;
+  }
 }

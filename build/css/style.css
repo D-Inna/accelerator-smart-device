@@ -707,7 +707,7 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
+  padding: 145px 40px;
 }
 
 .modal__overlay {
@@ -721,18 +721,18 @@ button,
 
 .modal__content {
   position: relative;
-  width: 610px;
-  padding: 40px;
+  width: 500px;
+  padding: 35px 30px 30px;
   background-color: #00b3ff;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: -5px;
+  right: 19px;
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   background: rgba(255, 255, 255, 0);
   border: none;
@@ -741,10 +741,6 @@ button,
 
 .modal--responsive .modal__content {
   width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
 }
 
 .modal--no-scale {
@@ -778,13 +774,14 @@ button,
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
+  font-size: 30px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: -3px;
 }
 
 .modal__content div {
-  margin: 20px 0 35px;
+  margin: 10px 0 19px;
 }
 
 .modal__content span {
@@ -798,13 +795,13 @@ button,
 
 .modal__content form {
   min-width: 405px;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .modal__content input {
   width: 100%;
   border: none;
-  padding: 25px 15px;
+  padding: 18px 13px;
   background-color: #008bc6;
 }
 
@@ -853,7 +850,7 @@ button,
   resize: vertical;
   background-color: #008bc6;
   border: none;
-  padding: 25px 15px;
+  padding: 21px 14px 36px;
 }
 
 .modal__content textarea::-webkit-input-placeholder {
@@ -899,13 +896,14 @@ button,
 .modal__consent div {
   margin: 0;
   padding-top: 0;
-  padding-left: 30px;
+  padding-left: 36px;
 }
 
 .modal__consent button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #041427;
@@ -1769,10 +1767,11 @@ button,
   z-index: 2;
   width: 410px;
   color: #f2f5f6;
-  padding: 15px 25px;
+  padding: 17px 22px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #00b2ff;
   border-radius: 3px;
@@ -1816,7 +1815,7 @@ button,
 }
 
 .advantages__wrapper li {
-  padding: 40px 43px 70px;
+  padding: 40px 42px 70px;
   width: 100%;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
@@ -1844,8 +1843,8 @@ button,
   line-height: 34px;
   margin: 0;
   padding: 0;
-  margin-top: 11px;
-  margin-bottom: 15px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .advantages__wrapper p {
@@ -2414,6 +2413,12 @@ button,
     display: none;
   }
 
+  .user-list {
+    padding-top: 20px;
+    margin-right: -12px;
+    gap: 10px;
+  }
+
   .user-list__login {
     min-width: 40px;
   }
@@ -2423,7 +2428,7 @@ button,
   }
 
   .main-footer {
-    padding: 50px 45px 65px 50px;
+    padding: 50px 34px 59px 50px;
     max-width: 1023px;
     min-width: 768px;
   }
@@ -2444,16 +2449,22 @@ button,
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
   }
 
   .footer-menu {
-    padding-top: 35px;
+    padding-top: 14px;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 130px;
-    -moz-column-gap: 130px;
-    column-gap: 130px;
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
   }
 
   .footer-menu__title--address {
@@ -2485,6 +2496,7 @@ button,
   .promo {
     min-height: 540px;
     padding-bottom: 15%;
+    padding-top: 10%;
   }
 
   .promo__image {
@@ -2497,30 +2509,61 @@ button,
   .promo__title {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 20px;
-    padding-left: 10%;
+    margin-bottom: 4px;
+    padding-left: 6.7%;
+    letter-spacing: 4.5px;
   }
 
   .promo__text {
-    margin-bottom: 50px;
-    padding-left: 10%;
+    margin-bottom: 56px;
+    padding-left: 6.5%;
   }
 
   .promo__link {
-    margin-left: 10%;
+    margin-left: 12.3%;
   }
 
   .advantages {
-    padding: 6% 5% 5%;
+    padding: 10.5% 6% 10.1%;
   }
 
   .advantages__wrapper {
-    padding-bottom: 6%;
+    padding-bottom: 9%;
+  }
+
+  .advantages__wrapper ul {
+    gap: 27px;
+  }
+
+  .advantages__wrapper li {
+    padding: 40px 43px 30px;
+    min-height: 360px;
+  }
+
+  .advantages__wrapper-info {
+    padding-left: 26.5%;
+  }
+
+  .advantages__wrapper-info img {
+    top: 3px;
+    left: 0;
+  }
+
+  .advantages__wrapper-info p {
+    margin: 12px 0 22px;
+  }
+
+  .advantages__wrapper-info button {
+    margin-top: -4px;
   }
 
   .product-card {
-    padding: 6% 5% 5%;
+    padding: 7.5% 6.5% 5%;
     min-height: 1080px;
+  }
+
+  .product-card h1 {
+    margin-bottom: 5.5%;
   }
 
   .product-card ul {
@@ -2531,7 +2574,7 @@ button,
 
   .product-card li {
     min-height: 250px;
-    padding: 4% 70% 0 5%;
+    padding: 6% 70.6% 0 7%;
   }
 
   .product-card img {
@@ -2541,8 +2584,8 @@ button,
   }
 
   .product-card button {
-    top: 190px;
-    right: 0;
+    top: 191px;
+    right: -2px;
   }
 
   .form {
@@ -2551,7 +2594,7 @@ button,
 
   .form__wrapper {
     display: block;
-    padding: 8% 7% 10%;
+    padding: 2.3% 6.5% 10%;
     min-height: 580px;
     background: none;
   }
@@ -2560,8 +2603,44 @@ button,
     display: none;
   }
 
+  .form__modal-auth h2 {
+    margin-bottom: 6px;
+  }
+
   .form__modal-auth form {
     min-width: 670px;
+    margin-top: 23px;
+  }
+
+  .form__inner input {
+    padding: 16px;
+  }
+
+  .form__modal-auth textarea {
+    padding: 30px 15px;
+  }
+
+  .form__consent {
+    padding-top: 11px;
+    gap: 50px;
+  }
+
+  .form__consent button {
+    width: 265px;
+  }
+
+  .form__consent span {
+    padding-top: 11px;
+  }
+
+  .form__consent span::after {
+    top: 17px;
+    left: -25px;
+  }
+
+  .form__consent input[type=checkbox]:checked + span::before {
+    top: 22px;
+    left: -23px;
   }
 }
 
@@ -2599,6 +2678,10 @@ button,
     min-height: 70px;
   }
 
+  .user-list {
+    padding-top: 12px;
+  }
+
   .main-footer {
     max-width: 767px;
     min-width: 320px;
@@ -2619,6 +2702,12 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    margin-top: 4px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 18px;
+    margin-bottom: 10px;
   }
 
   .footer-menu {
@@ -2628,7 +2717,7 @@ button,
 
   .footer-menu__title {
     position: relative;
-    padding: 20px 25px;
+    padding: 22px 25px;
     margin: 0;
   }
 
@@ -2651,8 +2740,8 @@ button,
     border: none;
     background-color: transparent;
     padding: 0;
-    top: 54px;
-    right: 40px;
+    top: 33px;
+    right: 26px;
   }
 
   .footer-menu__toggle::before,
@@ -2683,7 +2772,7 @@ button,
   .footer-menu__toggle--address {
     position: absolute;
     top: 20px;
-    right: 40px;
+    right: 26px;
   }
 
   .footer-menu__title--address {
@@ -2700,7 +2789,7 @@ button,
   }
 
   .promo {
-    padding-top: 10%;
+    padding-top: 25%;
     padding-bottom: 20%;
     min-height: 490px;
   }
@@ -2715,11 +2804,16 @@ button,
     font-size: 36px;
     line-height: 42px;
     padding-right: 65%;
+    padding-left: 7.7%;
+    letter-spacing: 2.9px;
+    margin-bottom: 7px;
   }
 
   .promo__text {
     font-size: 14px;
     line-height: 21px;
+    padding-left: 7.5%;
+    margin-bottom: 47px;
   }
 
   .promo__text br {
@@ -2730,6 +2824,9 @@ button,
     font-size: 14px;
     line-height: 16px;
     width: 270px;
+    margin-left: 8%;
+    padding: 12px 22px;
+    letter-spacing: 0.5px;
   }
 
   .promo__link-mobile {
@@ -2737,26 +2834,28 @@ button,
   }
 
   .advantages {
-    padding: 6% 4% 8%;
+    padding: 15% 6% 25%;
   }
 
   .advantages__wrapper {
-    padding-bottom: 1%;
+    padding-bottom: 10%;
   }
 
   .advantages__wrapper ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .advantages__wrapper li {
-    padding: 30px;
-    min-height: none;
+    padding: 30px 37px 30px 30px;
+    min-height: 334px;
   }
 
   .advantages__wrapper h3 {
     font-size: 20px;
-    line-height: 14px;
+    line-height: 23px;
+    margin: 15px 0 14px;
   }
 
   .advantages__wrapper p {
@@ -2765,20 +2864,34 @@ button,
   }
 
   .advantages__wrapper-info {
-    padding-left: 0;
+    padding-left: 5px;
   }
 
   .advantages__wrapper-info img {
     display: none;
   }
 
+  .advantages__wrapper-info h2 {
+    font-size: 28px;
+  }
+
   .advantages__wrapper-info p {
     font-size: 14px;
     line-height: 18px;
+    margin: 8px 0 22px;
+  }
+
+  .advantages__wrapper-info p span {
+    display: none;
+  }
+
+  .advantages__wrapper-info button {
+    padding: 9px 12px;
+    min-width: 160px;
   }
 
   .product-card {
-    padding: 6% 4% 8%;
+    padding: 8%;
     min-height: 1050px;
   }
 
@@ -2793,14 +2906,14 @@ button,
     font-weight: 400;
     display: block;
     color: #ffffff;
-    margin: 20px 0 40px;
+    margin: 20px 0 28px;
     font-size: 28px;
     line-height: 40px;
     padding-right: 12%;
   }
 
   .product-card li {
-    padding-right: 43%;
+    padding: 9% 39% 0 11%;
   }
 
   .product-card h3 {
@@ -2819,11 +2932,13 @@ button,
 
   .form__wrapper {
     min-height: 750px;
+    padding: 2.3% 7.5% 10%;
   }
 
   .form__modal-auth h2 {
     font-size: 30px;
     line-height: 42px;
+    margin: 38px 0 2px;
   }
 
   .form__modal-auth span {
@@ -2833,6 +2948,7 @@ button,
 
   .form__modal-auth form {
     min-width: 270px;
+    margin-top: 30px;
   }
 
   .form__inner {
@@ -2843,14 +2959,23 @@ button,
     margin-bottom: 20px;
   }
 
+  .form__modal-auth textarea {
+    padding: 22px 15px 65px;
+  }
+
   .form__consent {
     display: block;
+    padding-top: 3px;
+  }
+
+  .form__consent div {
+    padding-left: 32px;
   }
 
   .form__consent button {
     display: block;
     min-width: 270px;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
   }
 
   .accordion__element--address {

@@ -38,7 +38,7 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 145px 40px;
 
     @include vp-767 {
       padding: 60px 16px;
@@ -59,8 +59,8 @@
   &__content {
     position: relative;
 
-    width: 610px;
-    padding: 40px;
+    width: 500px;
+    padding: 35px 30px 30px;
 
     background-color: $background-form;
 
@@ -72,12 +72,12 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: -5px;
+    right: 19px;
     z-index: 1;
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 0;
 
     background: $color-transparent;
@@ -93,7 +93,7 @@
 
   &--fit-content {
     .modal__content {
-      width: auto;
+      //width: auto;
 
       @include vp-767 {
         width: 100%;
@@ -125,13 +125,14 @@
 
 .modal__content h2 {
   @include title-roboto;
+  font-size: 30px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: -3px;
 }
 
 .modal__content div {
-  margin: 20px 0 35px;
+  margin: 10px 0 19px;
 }
 
 .modal__content span {
@@ -142,13 +143,13 @@
 
 .modal__content form {
   min-width: 405px;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .modal__content input {
   width: 100%;
   border: none;
-  padding: 25px 15px;
+  padding: 18px 13px;
   background-color: #008bc6;
 }
 
@@ -162,7 +163,7 @@
   resize: vertical;
   background-color: #008bc6;
   border: none;
-  padding: 25px 15px;
+  padding: 21px 14px 36px;
 }
 
 .modal__content textarea::placeholder {
@@ -173,13 +174,14 @@
 .modal__consent div {
   margin: 0;
   padding-top: 0;
-  padding-left: 30px;
+  padding-left: 36px;
 }
 
 .modal__consent button {
   font-family: $ff-roboto;
   font-size: 16px;
   line-height: 18px;
+  letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #041427;
