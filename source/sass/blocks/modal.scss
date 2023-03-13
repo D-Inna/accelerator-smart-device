@@ -83,6 +83,7 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+    margin-top: 18px;
   }
 
   &--responsive {
@@ -120,7 +121,6 @@
 
 .modal__close-btn svg {
   fill: #ffffff;
-  margin-top: 33px;
 }
 
 .modal__content h2 {

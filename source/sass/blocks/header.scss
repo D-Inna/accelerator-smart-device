@@ -10,10 +10,6 @@
   background-image: $header-color;
   padding: 0 18.2%;
 
-  // @media (max-width: $vp-1440) {
-  //   padding: 0 2%;
-  // }
-
   @media (max-width: $vp-1023) {
     position: static;
     padding-left: 50px;

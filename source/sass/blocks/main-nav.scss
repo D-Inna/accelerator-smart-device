@@ -50,12 +50,8 @@
 
 .main-nav__button {
   margin: 0;
-  margin-left: 98%;
+  margin-left: 101%;
   margin-top: -28px;
-
-  // @media (max-width: $vp-1440) {
-  //   margin-left: 76%;
-  // }
 
   @media (max-width: $vp-1023) {
     display: none;

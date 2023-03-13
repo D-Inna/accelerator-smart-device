@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   // justify-content: space-between;
   padding-top: 39px;
-  gap: 28px;
+  gap: 6vw;
 
   @media (max-width: $vp-1023) {
     padding-top: 20px;
@@ -21,10 +21,11 @@
   line-height: 18px;
   display: block;
   color: $color-text;
-  padding-right: 30px;
+  max-width: 225px;
 
   @media (max-width: $vp-1023) {
     min-width: 40px;
+    padding-right: 30px;
   }
 }
 
@@ -42,6 +43,7 @@
 
 .user-list__login-icon {
   fill: $background-blue;
+  margin-top: 2px;
 }
 
 .user-list__login:hover .user-list__login-icon,

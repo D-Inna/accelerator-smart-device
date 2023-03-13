@@ -737,6 +737,7 @@ button,
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+  margin-top: 18px;
 }
 
 .modal--responsive .modal__content {
@@ -766,7 +767,6 @@ button,
 
 .modal__close-btn svg {
   fill: #ffffff;
-  margin-top: 33px;
 }
 
 .modal__content h2 {
@@ -1547,7 +1547,7 @@ button,
 
 .main-nav__button {
   margin: 0;
-  margin-left: 98%;
+  margin-left: 101%;
   margin-top: -28px;
 }
 
@@ -1558,7 +1558,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 39px;
-  gap: 28px;
+  gap: 6vw;
 }
 
 .user-list__login {
@@ -1569,7 +1569,7 @@ button,
   line-height: 18px;
   display: block;
   color: #f2f5f6;
-  padding-right: 30px;
+  max-width: 225px;
 }
 
 .user-list__login:last-child {
@@ -1582,6 +1582,7 @@ button,
 
 .user-list__login-icon {
   fill: #00b2ff;
+  margin-top: 2px;
 }
 
 .user-list__login:hover .user-list__login-icon,
@@ -1633,10 +1634,15 @@ button,
   list-style: none;
   padding-left: 13px;
   margin-top: 34px;
+  min-width: 153px;
 }
 
 .social__item {
   padding-right: 15px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
 }
 
 .social__link:hover .social__network {
@@ -1815,7 +1821,7 @@ button,
 }
 
 .advantages__wrapper li {
-  padding: 40px 42px 70px;
+  padding: 37px 42px 70px;
   width: 100%;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
@@ -1843,8 +1849,8 @@ button,
   line-height: 34px;
   margin: 0;
   padding: 0;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .advantages__wrapper p {
@@ -1864,12 +1870,14 @@ button,
 .advantages__wrapper-info {
   position: relative;
   padding-left: 20.7%;
+  z-index: 2;
 }
 
 .advantages__wrapper-info img {
   position: absolute;
   top: 2px;
   left: 4px;
+  z-index: -1;
 }
 
 .advantages__wrapper-info h2 {
@@ -2421,6 +2429,7 @@ button,
 
   .user-list__login {
     min-width: 40px;
+    padding-right: 30px;
   }
 
   .user-list__text {
@@ -2450,6 +2459,7 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 3/4;
     margin-top: 10px;
+    margin-right: 13px;
     padding: 0;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -2538,6 +2548,11 @@ button,
   .advantages__wrapper li {
     padding: 40px 43px 30px;
     min-height: 360px;
+  }
+
+  .advantages__wrapper h3 {
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 
   .advantages__wrapper-info {
@@ -2838,13 +2853,13 @@ button,
   }
 
   .advantages__wrapper {
-    padding-bottom: 10%;
+    padding-bottom: 8%;
   }
 
   .advantages__wrapper ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 32px;
   }
 
   .advantages__wrapper li {
@@ -2852,15 +2867,24 @@ button,
     min-height: 334px;
   }
 
+  .advantages__wrapper li:nth-child(3n) {
+    padding-top: 41px;
+  }
+
   .advantages__wrapper h3 {
     font-size: 20px;
-    line-height: 23px;
-    margin: 15px 0 14px;
+    line-height: 24px;
+    margin: 6px 0 14px;
   }
 
   .advantages__wrapper p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
+    margin-top: -3px;
+  }
+
+  .advantages__wrapper svg {
+    margin-bottom: 6px;
   }
 
   .advantages__wrapper-info {

@@ -19,10 +19,12 @@
   list-style: none;
   padding-left: 13px;
   margin-top: 34px;
+  min-width: 153px;
 
   @media (max-width: $vp-1023) {
     grid-column: 3/4;
     margin-top: 10px;
+    margin-right: 13px;
     padding: 0;
     justify-content: end;
   }
@@ -38,6 +40,10 @@
 
 .social__item {
   padding-right: 15px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
 }
 
 .social__link:hover .social__network {
