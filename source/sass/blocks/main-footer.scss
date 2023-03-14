@@ -1,6 +1,5 @@
 .main-footer {
   width: 100%;
-  max-width: 1920px;
   min-width: 1024px;
   margin: 0 auto;
   background-color: $color-footer;
@@ -17,6 +16,12 @@
     min-width: 320px;
     padding: 35px 0;
   }
+}
+
+.main-footer__container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1300px;
 }
 
 .main-footer__logo {

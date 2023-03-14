@@ -234,7 +234,7 @@
   }
 }
 
-.form__consent input[type="checkbox"]:checked + span::before {
+input[type="checkbox"]:checked + span::before {
   position: absolute;
   content: "";
   width: 10px;

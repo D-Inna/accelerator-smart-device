@@ -159,19 +159,40 @@
 
 .advantages__wrapper-info p {
   @include text-mono;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-bottom: 20px;
 
   @media (max-width: $vp-1023) {
-    margin: 12px 0 22px;
+    padding: 12px 0 22px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 18px;
-    margin: 8px 0 22px;
+    padding: 8px 0 22px;
+  }
 
-    span {
+  &:nth-child(3n) {
+    padding-bottom: 0;
+  }
+
+  &.is-active {
+    [data-accordion="mobile-only"] {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  [data-accordion="mobile-only"] {
+    //padding-bottom: 20px;
+
+    @media (max-width: $vp-1023) {
+      padding-bottom: 0;
+    }
+
+    @media (max-width: $vp-767) {
       display: none;
+      font-size: 0;
     }
   }
 }
@@ -190,7 +211,7 @@
   background-color: $background-color;
   text-align: center;
   min-width: 180px;
-  margin-top: 20px;
+  //margin-top: 20px;
   cursor: pointer;
 
   @media (max-width: $vp-1023) {
@@ -210,8 +231,4 @@
 
 .advantages__wrapper-info button:active {
   opacity: 0.7;
-}
-
-.advantages__wrapper-more {
-  display: none;
 }
