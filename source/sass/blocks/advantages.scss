@@ -31,6 +31,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
+  @media (min-width: $vp-1024) {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+
   @media (max-width: $vp-1023) {
     gap: 27px;
   }
@@ -47,6 +52,10 @@
   border: 1px solid $border-color;
   border-left: 5px solid $background-blue;
   min-height: 298px;
+
+  @media (min-width: $vp-1024) {
+    max-width: 595px;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 40px 43px 30px;
@@ -121,6 +130,11 @@
   position: relative;
   padding-left: 20.7%;
   z-index: 2;
+
+  @media (min-width: $vp-1024) {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
 
   @media (max-width: $vp-1023) {
     padding-left: 26.5%;

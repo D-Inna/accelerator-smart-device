@@ -2489,6 +2489,30 @@ button,
     height: 100%;
   }
 
+  .advantages__wrapper ul {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+
+  .advantages__wrapper li {
+    max-width: 595px;
+  }
+
+  .advantages__wrapper-info {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+
+  .product-card__wrapper-desktop {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+
+  .product-card ul {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+
   .product-card li {
     max-width: 350px;
   }
