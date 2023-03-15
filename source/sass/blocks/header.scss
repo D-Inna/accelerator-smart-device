@@ -7,7 +7,6 @@
   min-width: 1024px;
   margin: 0 auto;
   background-image: $header-color;
-  padding: 0 18.2%;
 
   @media (max-width: $vp-1023) {
     position: static;
@@ -31,16 +30,19 @@
   margin: 0 auto;
   height: 100%;
   max-width: 1300px;
+  padding: 0 40px;
 
   @media (max-width: $vp-1023) {
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
 .header__logo {
   display: block;
   padding-top: 30px;
+  min-width: 215px;
 
   @media (max-width: $vp-1023) {
     padding-top: 20px;
@@ -48,8 +50,15 @@
 
   @media (max-width: $vp-767) {
     padding-top: 15px;
-    width: 35px;
+    min-width: 35px;
     height: 35px;
+  }
+}
+
+.header__logo img {
+  @media (max-width: $vp-767) {
+    height: 35px;
+    width: 35px;
   }
 }
 

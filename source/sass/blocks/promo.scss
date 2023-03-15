@@ -1,18 +1,19 @@
 .promo {
-  min-height: 760px;  //???????????????????????
+  min-height: 760px;
   padding-top: 16%;
   background-color: $color-footer;
-  //z-index: -2;
   padding-bottom: 14%;
+  margin-top: -5.4%;
 
   @media (max-width: $vp-1023) {
     min-height: 540px;
+    margin-top: 0;
     padding-bottom: 15%;
-    padding-top: 10%;
+    padding-top: 11%;
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 25%;
+    padding-top: 27%;
     padding-bottom: 20%;
     min-height: 490px;
   }
@@ -48,13 +49,13 @@
   line-height: 94px;
   letter-spacing: 6px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: -12px 0 30px;
   padding-left: 24.7%;
 
   @media (max-width: $vp-1023) {
     font-size: 64px;
     line-height: 75px;
+    margin-top: 0;
     margin-bottom: 4px;
     padding-left: 6.7%;
     letter-spacing: 4.5px;

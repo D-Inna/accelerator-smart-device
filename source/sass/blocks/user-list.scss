@@ -1,14 +1,14 @@
 .user-list {
+  list-style-type: none;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
-  padding-top: 39px;
   gap: 6vw;
 
   @media (max-width: $vp-1023) {
-    padding-top: 20px;
-    margin-right: -12px;
-    gap: 10px;
+    padding-top: 0;
+    margin-right: -13px;
+    gap: 21px;
   }
 
   @media (max-width: $vp-767) {
@@ -43,7 +43,6 @@
 
 .user-list__login-icon {
   fill: $background-blue;
-  margin-top: 2px;
 }
 
 .user-list__login:hover .user-list__login-icon,

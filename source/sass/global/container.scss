@@ -19,8 +19,8 @@
 
 .container {
   @media (min-width: $vp-1024) {
-    display: flex;
     margin: 0 auto;
+    display: flex;
   }
 
   @media (max-width: $vp-1023) {
