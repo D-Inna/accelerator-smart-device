@@ -1911,6 +1911,10 @@ button,
   padding-bottom: 24px;
 }
 
+.advantages__wrapper-mobile.is-active [data-accordion=content-mobile] {
+  display: block;
+}
+
 .advantages__wrapper-info p:nth-child(3n) {
   margin-bottom: -26px;
 }
@@ -2966,6 +2970,10 @@ button,
     font-size: 14px;
     line-height: 18px;
     padding: 8px 0 16px;
+  }
+
+  .advantages__wrapper-mobile [data-accordion=content-mobile] {
+    display: none;
   }
 
   .advantages__wrapper-info p:nth-child(3n) {
