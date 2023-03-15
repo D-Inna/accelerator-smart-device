@@ -127,6 +127,56 @@
   color: #ffffff;
 }
 
+
+.form__custom-input {
+  position: relative;
+
+  &__error {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+
+    color: #ff1553;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    @media screen and (max-width: 767px) {
+      bottom: 20px;
+    }
+  }
+
+  &.is-valid {
+    input {
+      border: 2px solid #22b259;
+
+      &:focus,
+      &:hover {
+        border: 2px solid rgba(#22b259, 0.5);
+      }
+    }
+  }
+}
+
+.form__custom-input .input-message {
+  position: absolute;
+  left: 0;
+  bottom: -51px;
+  font-size: 15px;
+  line-height: 14.6px;
+  width: 400px;
+
+  &.is-invalid {
+    color: #ff0000;
+  }
+
+  &.is-valid {
+    color: #15ab07;
+  }
+}
+
+
 .form__modal-auth textarea {
   width: 100%;
   resize: vertical;
@@ -188,6 +238,7 @@
   min-width: 265px;
   text-align: center;
   border: none;
+  height: 45px;
 
   @media (max-width: $vp-1023) {
     width: 265px;

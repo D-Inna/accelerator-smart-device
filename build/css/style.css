@@ -963,6 +963,47 @@ button,
   background: url("../../img/check.svg") no-repeat;
 }
 
+.modal__custom-input {
+  position: relative;
+}
+
+.modal__custom-input__error {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  color: #ff1553;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.modal__custom-input.is-valid input {
+  border: 2px solid #22b259;
+}
+
+.modal__custom-input.is-valid input:focus,
+.modal__custom-input.is-valid input:hover {
+  border: 2px solid rgba(34, 178, 89, 0.5);
+}
+
+.modal__custom-input .input-message {
+  position: absolute;
+  left: 0;
+  bottom: -51px;
+  font-size: 15px;
+  line-height: 14.6px;
+  width: 400px;
+}
+
+.modal__custom-input .input-message.is-invalid {
+  color: #ff0000;
+}
+
+.modal__custom-input .input-message.is-valid {
+  color: #15ab07;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1747,7 +1788,6 @@ button,
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 880px;
   z-index: 1;
   top: 0;
 }
@@ -2145,6 +2185,47 @@ button,
   color: #ffffff;
 }
 
+.form__custom-input {
+  position: relative;
+}
+
+.form__custom-input__error {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  color: #ff1553;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.form__custom-input.is-valid input {
+  border: 2px solid #22b259;
+}
+
+.form__custom-input.is-valid input:focus,
+.form__custom-input.is-valid input:hover {
+  border: 2px solid rgba(34, 178, 89, 0.5);
+}
+
+.form__custom-input .input-message {
+  position: absolute;
+  left: 0;
+  bottom: -51px;
+  font-size: 15px;
+  line-height: 14.6px;
+  width: 400px;
+}
+
+.form__custom-input .input-message.is-invalid {
+  color: #ff0000;
+}
+
+.form__custom-input .input-message.is-valid {
+  color: #15ab07;
+}
+
 .form__modal-auth textarea {
   width: 100%;
   resize: vertical;
@@ -2221,6 +2302,7 @@ button,
   min-width: 265px;
   text-align: center;
   border: none;
+  height: 45px;
 }
 
 .form__consent button:hover {
@@ -2397,6 +2479,18 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .promo {
+    position: relative;
+  }
+
+  .promo__image {
+    height: 100%;
+  }
+
+  .product-card li {
+    max-width: 350px;
   }
 
   .accordion {
@@ -3086,6 +3180,10 @@ button,
 }
 
 @media screen and (max-width: 767px) {
+  .modal__custom-input__error {
+    bottom: 20px;
+  }
+
   .custom-input,
   .custom-textarea {
     padding: 4px 0 48px;
@@ -3145,6 +3243,10 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+
+  .form__custom-input__error {
+    bottom: 20px;
   }
 }
 

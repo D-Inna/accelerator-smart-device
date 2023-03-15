@@ -237,3 +237,51 @@
   left: -22px;
   background: url("../../img/check.svg") no-repeat;
 }
+
+.modal__custom-input {
+  position: relative;
+
+  &__error {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+
+    color: #ff1553;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    @media screen and (max-width: 767px) {
+      bottom: 20px;
+    }
+  }
+
+  &.is-valid {
+    input {
+      border: 2px solid #22b259;
+
+      &:focus,
+      &:hover {
+        border: 2px solid rgba(#22b259, 0.5);
+      }
+    }
+  }
+}
+
+.modal__custom-input .input-message {
+  position: absolute;
+  left: 0;
+  bottom: -51px;
+  font-size: 15px;
+  line-height: 14.6px;
+  width: 400px;
+
+  &.is-invalid {
+    color: #ff0000;
+  }
+
+  &.is-valid {
+    color: #15ab07;
+  }
+}

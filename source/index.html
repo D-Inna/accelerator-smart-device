@@ -205,16 +205,16 @@
             <span>Мы&nbsp;проконсультируем Вас бесплатно</span>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__inner">
-                <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению"
+                <div class="form__custom-input" data-validate-type="text" data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению"
                   data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                   <label> <span class="visually-hidden">Имя пользователя.</span>
                     <input type="text" name="name" placeholder="Имя" autofocus required>
                   </label>
                 </div>
-                <div data-validate-type="phone" data-on-input-validate="data-on-input-validate"
-                  data-message-base="Поле обязательно к заполнению"
-                  data-message-extra="Проверьте корректность заполнения поля"
-                  data-message-success="Поле заполнено верно" data-required="data-required">
+                <div class="form__custom-input" data-validate-type="phone"
+                  data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                   <label> <span class="visually-hidden">Номер телефона.</span>
                     <input type="tel" name="field-phone" placeholder="Телефон" required>
                   </label>
@@ -381,14 +381,14 @@
         <h2>Закажите звонок</h2>
         <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <div data-validate-type="text" data-focus="Имя" data-limitation="name"
+          <div class="modal__custom-input" data-validate-type="text" data-focus="Имя" data-limitation="name"
             data-message-base="Поле обязательно к заполнению"
             data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
             <label> <span class="visually-hidden">Имя пользователя.</span>
               <input type="text" name="name" placeholder="Имя" required>
             </label>
           </div>
-          <div data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+          <div class="modal__custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
             data-message-base="Поле обязательно к заполнению"
             data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
             data-required="data-required">

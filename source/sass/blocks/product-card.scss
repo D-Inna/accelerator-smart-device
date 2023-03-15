@@ -61,6 +61,10 @@
   position: relative;
   padding: 14% 40% 0 12%;
 
+  @media (min-width: $vp-1024) {
+    max-width: 350px;
+  }
+
   @media (max-width: $vp-1023) {
     min-height: 250px;
     padding: 6% 70.6% 0 7%;

@@ -5,6 +5,10 @@
   padding-bottom: 14%;
   margin-top: -5.4%;
 
+  @media (min-width: $vp-1024) {
+    position: relative;
+  }
+
   @media (max-width: $vp-1023) {
     min-height: 540px;
     margin-top: 0;
@@ -23,9 +27,12 @@
   position: absolute;
   width: 100%;
   object-fit: cover;
-  height: 880px;
   z-index: 1;
   top: 0;
+
+  @media (min-width: $vp-1024) {
+    height: 100%;
+  }
 
   @media (max-width: $vp-1023) {
     object-position: 100% 50%;
