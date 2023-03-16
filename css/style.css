@@ -2304,7 +2304,6 @@ button,
   min-width: 265px;
   text-align: center;
   border: none;
-  height: 45px;
 }
 
 .form__consent button:hover {
