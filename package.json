@@ -9,6 +9,7 @@
     "Firefox ESR"
   ],
   "scripts": {
+    "deploy": "gulp build && gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
