@@ -17,9 +17,11 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 27%;
     padding-bottom: 20%;
-    min-height: 490px;
+    position: relative;
+    padding-top: 30%;
+    margin-top: -10px;
+    min-height: 507px;
   }
 }
 
@@ -42,7 +44,7 @@
 
   @media (max-width: $vp-767) {
     object-position: 25% 50%;
-    height: 560px;
+    height: 100%;
   }
 }
 
