@@ -23,6 +23,11 @@
   color: $color-text;
   max-width: 225px;
 
+  @media (min-width: $vp-1024) {
+    display: flex;
+    align-items: center;
+  }
+
   @media (max-width: $vp-1023) {
     min-width: 40px;
     padding-right: 30px;
@@ -34,7 +39,7 @@
 }
 
 .user-list__text {
-  padding-left: 7px;
+  padding-left: 18px;
 
   @media (max-width: $vp-1023) {
     display: none;

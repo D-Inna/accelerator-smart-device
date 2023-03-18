@@ -30,7 +30,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="user-list__login" href="#">
+              <a class="user-list__login" href="mailto:info@sd.ru">
                 <svg class="user-list__login-icon" aria-hidden="true" focusable="false" width="20" height="20">
                   <use href="./img/sprite.svg#email"></use>
                 </svg>
@@ -109,7 +109,11 @@
         </div>
         <div class="advantages__wrapper-info">
           <div class="advantages__wrapper-accordion" data-accordion="parent">
-            <img src="./img/svg/year.svg" width="150" height="320" alt="2022 год.">
+            <picture>
+              <source type="image/webp" srcset="./img/year.webp 1x, ./img/year@2x.webp 2x">
+              <img src="./img/year.png" width="150" height="320" srcset="./img/year@2x.png 2x"
+                alt="2022 год.">
+            </picture>
             <div class="advantages__wrapper-mobile" data-accordion="element">
               <h2>О&nbsp;компании</h2>
               <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
@@ -211,7 +215,7 @@
                   data-message-base="Поле обязательно к заполнению"
                   data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                   <label> <span class="visually-hidden">Имя пользователя.</span>
-                    <input type="text" name="name" placeholder="Имя" autofocus required>
+                    <input type="text" name="name" placeholder="Имя" required>
                   </label>
                 </div>
                 <div class="form__custom-input" data-validate-type="phone"
@@ -226,13 +230,13 @@
                 <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="form__consent">
-                <button type="submit">Задать вопрос</button>
                 <div data-validate-type="checkbox">
                   <label> <span class="visually-hidden">Согласие на обработку персональных данных.</span>
                     <input type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
                     <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
                   </label>
                 </div>
+                <button type="submit">Задать вопрос</button>
               </div>
             </form>
           </div>
@@ -278,7 +282,7 @@
           data-destroy="(max-width: 767px)">
 
           <div class="accordion__element" data-accordion="element">
-            <h3 class="footer-menu__title">Разделы сайта</h3>
+            <h3 class="footer-menu__title" data-accordion="button">Разделы сайта</h3>
             <button class="footer-menu__toggle accordion__button btn btn--aquamarine" type="button"
               data-accordion="button">
               <span class="visually-hidden">Открыть меню.</span>
@@ -330,7 +334,7 @@
           </div>
 
           <div class="accordion__element accordion__element--address" data-accordion="element">
-            <h3 class="footer-menu__title footer-menu__title--address">Наш офис</h3>
+            <h3 class="footer-menu__title footer-menu__title--address" data-accordion="button">Наш офис</h3>
             <button class="footer-menu__toggle footer-menu__toggle--address accordion__button btn btn--aquamarine"
               type="button" data-accordion="button">
               <span class="visually-hidden">Открыть меню.</span>
@@ -381,13 +385,13 @@
         </button>
 
         <h2>Закажите звонок</h2>
-        <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
+        <span>Оставьте контакты, мы&nbsp;проконсультируем <br> вас бесплатно в&nbsp;удобное время</span>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal__custom-input" data-validate-type="text" data-focus="Имя" data-limitation="name"
             data-message-base="Поле обязательно к заполнению"
             data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
             <label> <span class="visually-hidden">Имя пользователя.</span>
-              <input type="text" name="name" placeholder="Имя" required>
+              <input type="text" name="name" placeholder="Имя" required autofocus>
             </label>
           </div>
           <div class="modal__custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
@@ -402,14 +406,14 @@
             <textarea name="comment" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
           </div>
           <div class="modal__consent">
-            <button type="submit">Отправить</button>
             <div data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
               <label> <span class="visually-hidden">Согласие на обработку персональных данных.</span>
-                <input class="visually-hidden" type="checkbox" value="user-agreement-1" name="user-agreement" checked
+                <input type="checkbox" value="user-agreement-1" name="user-agreement" checked
                   required>
                 <span>Я&nbsp;согласен на&nbsp;обработку <br> персональных данных</span>
               </label>
             </div>
+            <button type="submit">Отправить</button>
           </div>
         </form>
 

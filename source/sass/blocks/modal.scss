@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 16px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -60,7 +60,7 @@
     position: relative;
 
     width: 500px;
-    padding: 35px 30px 30px;
+    padding: 35px 40px 30px;
 
     background-color: $background-form;
 
@@ -73,7 +73,7 @@
   &__close-btn {
     position: absolute;
     top: -5px;
-    right: 19px;
+    right: 10px;
     z-index: 1;
 
     width: 50px;
@@ -84,6 +84,10 @@
     border: none;
     cursor: pointer;
     margin-top: 18px;
+
+    &:focus {
+      outline: 2px solid #023449;
+    }
   }
 
   &--responsive {
@@ -142,15 +146,20 @@
 }
 
 .modal__content form {
-  min-width: 405px;
+  min-width: 420px;
   margin-top: 32px;
 }
 
 .modal__content input {
   width: 100%;
   border: none;
-  padding: 18px 13px;
+  padding: 17px 15px;
   background-color: #008bc6;
+
+  &:focus {
+    background-color: #045e85;
+    outline: 2px solid #023449;
+  }
 }
 
 .modal__content input::placeholder {
@@ -160,10 +169,16 @@
 
 .modal__content textarea {
   width: 100%;
-  resize: vertical;
+  overflow: auto;
+  resize: none;
   background-color: #008bc6;
   border: none;
-  padding: 21px 14px 36px;
+  padding: 24px 14px 36px;
+
+  &:focus {
+    background-color: #045e85;
+    outline: 2px solid #023449;
+  }
 }
 
 .modal__content textarea::placeholder {
@@ -171,38 +186,21 @@
   color: #ffffff;
 }
 
+.modal__consent {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__consent div {
   margin: 0;
   padding-top: 0;
-  padding-left: 36px;
-}
-
-.modal__consent button {
-  font-family: $ff-roboto;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #041427;
-  color: #ffffff;
-  padding: 15px 25px;
-  width: 100%;
-  text-align: center;
-  border: none;
-  margin-bottom: 20px;
-}
-
-.modal__consent button:hover {
-  opacity: 0.8;
-}
-
-.modal__consent button:active {
-  opacity: 0.7;
+  padding-left: 0;
 }
 
 .modal__consent label {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .modal__consent span {
@@ -211,31 +209,45 @@
   line-height: 16px;
   display: block;
   margin-bottom: 0;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: -25px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #ffffff;
-    border-radius: 2px;
-  }
+  letter-spacing: 0.1px;
+  cursor: pointer;
 
   br {
     display: none;
   }
 }
 
-.modal__consent input[type="checkbox"]:checked + span::before {
+.modal__consent input[type="checkbox"] {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 2px;
+  appearance: none;
+  padding: 1px;
+  margin: 3px 9px 0;
+  cursor: pointer;
+}
+
+.modal__consent input[type="checkbox"]:checked::after {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 6px;
-  top: 4px;
-  left: -22px;
-  background: url("../../img/check.svg") no-repeat;
+  top: 2px;
+  left: 3px;
+  display: block;
+  width: 7px;
+  height: 5px;
+  border: 1px solid #ffffff;
+  border-right: none;
+  border-top: none;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.modal__consent input:focus {
+  outline: 2px solid #023449;
 }
 
 .modal__custom-input {
@@ -284,4 +296,36 @@
   &.is-valid {
     color: #15ab07;
   }
+}
+
+.modal__consent button {
+  font-family: $ff-roboto;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #041427;
+  color: #ffffff;
+  padding: 15px 25px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  order: -1;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    background-color: #045e85;
+    outline: 2px solid #023449;
+  }
+}
+
+.modal__consent button:active {
+  opacity: 0.7;
 }

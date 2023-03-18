@@ -63,5 +63,15 @@
 
   @media (max-width: $vp-767) {
     position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: $border-color;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
   }
 }

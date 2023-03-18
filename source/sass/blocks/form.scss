@@ -179,7 +179,8 @@
 
 .form__modal-auth textarea {
   width: 100%;
-  resize: vertical;
+  overflow: auto;
+  resize: none;
   background-color: #008bc6;
   border: none;
   padding: 22px 15px 40px;
@@ -210,7 +211,8 @@
   }
 
   @media (max-width: $vp-767) {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 3px;
   }
 }
@@ -238,6 +240,8 @@
   min-width: 265px;
   text-align: center;
   border: none;
+  order: -1;
+  cursor: pointer;
 
   @media (max-width: $vp-1023) {
     width: 265px;
@@ -271,10 +275,10 @@
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
-  cursor: pointer;
   appearance: none;
   margin-right: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .form__consent input[type="checkbox"]:checked::after {
@@ -289,6 +293,7 @@
   border-right: none;
   border-top: none;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .form__consent span {
@@ -298,6 +303,7 @@
   display: block;
   margin-bottom: 0;
   padding-top: 15px;
+  cursor: pointer;
 
   @media (max-width: $vp-1023) {
     padding-top: 11px;
