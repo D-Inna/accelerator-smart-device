@@ -1,11 +1,13 @@
 .user-list {
   list-style-type: none;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6vw;
+  display: grid;
+  grid-template-columns: 225px 225px;
+  gap: 5.5%;
 
   @media (max-width: $vp-1023) {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 0;
     margin-right: -13px;
     gap: 21px;
@@ -21,7 +23,6 @@
   line-height: 18px;
   display: block;
   color: $color-text;
-  max-width: 225px;
 
   @media (min-width: $vp-1024) {
     display: flex;
