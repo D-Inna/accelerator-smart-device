@@ -438,6 +438,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   background-color: #ffffff;
 }
 
@@ -659,7 +660,7 @@ button,
 .modal {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 16px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -672,7 +673,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -722,14 +723,14 @@ button,
 .modal__content {
   position: relative;
   width: 500px;
-  padding: 35px 30px 30px;
+  padding: 35px 40px 30px;
   background-color: #00b3ff;
 }
 
 .modal__close-btn {
   position: absolute;
   top: -5px;
-  right: 19px;
+  right: 10px;
   z-index: 1;
   width: 50px;
   height: 50px;
@@ -738,6 +739,10 @@ button,
   border: none;
   cursor: pointer;
   margin-top: 18px;
+}
+
+.modal__close-btn:focus {
+  outline: 2px solid #023449;
 }
 
 .modal--responsive .modal__content {
@@ -794,15 +799,20 @@ button,
 }
 
 .modal__content form {
-  min-width: 405px;
+  min-width: 420px;
   margin-top: 32px;
 }
 
 .modal__content input {
   width: 100%;
   border: none;
-  padding: 18px 13px;
+  padding: 17px 15px;
   background-color: #008bc6;
+}
+
+.modal__content input:focus {
+  background-color: #045e85;
+  outline: 2px solid #023449;
 }
 
 .modal__content input::-webkit-input-placeholder {
@@ -847,10 +857,16 @@ button,
 
 .modal__content textarea {
   width: 100%;
-  resize: vertical;
+  overflow: auto;
+  resize: none;
   background-color: #008bc6;
   border: none;
-  padding: 21px 14px 36px;
+  padding: 24px 14px 36px;
+}
+
+.modal__content textarea:focus {
+  background-color: #045e85;
+  outline: 2px solid #023449;
 }
 
 .modal__content textarea::-webkit-input-placeholder {
@@ -893,38 +909,30 @@ button,
   color: #ffffff;
 }
 
+.modal__consent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .modal__consent div {
   margin: 0;
   padding-top: 0;
-  padding-left: 36px;
-}
-
-.modal__consent button {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #041427;
-  color: #ffffff;
-  padding: 15px 25px;
-  width: 100%;
-  text-align: center;
-  border: none;
-  margin-bottom: 20px;
-}
-
-.modal__consent button:hover {
-  opacity: 0.8;
-}
-
-.modal__consent button:active {
-  opacity: 0.7;
+  padding-left: 0;
 }
 
 .modal__consent label {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .modal__consent span {
@@ -936,31 +944,49 @@ button,
   line-height: 16px;
   display: block;
   margin-bottom: 0;
-}
-
-.modal__consent span::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -25px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
 }
 
 .modal__consent span br {
   display: none;
 }
 
-.modal__consent input[type=checkbox]:checked + span::before {
+.modal__consent input[type=checkbox] {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1px;
+  margin: 3px 9px 0;
+  cursor: pointer;
+}
+
+.modal__consent input[type=checkbox]:checked::after {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 6px;
-  top: 4px;
-  left: -22px;
-  background: url("../../img/check.svg") no-repeat;
+  top: 2px;
+  left: 3px;
+  display: block;
+  width: 7px;
+  height: 5px;
+  border: 1px solid #ffffff;
+  border-right: none;
+  border-top: none;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.modal__consent input:focus {
+  outline: 2px solid #023449;
 }
 
 .modal__custom-input {
@@ -1002,6 +1028,40 @@ button,
 
 .modal__custom-input .input-message.is-valid {
   color: #15ab07;
+}
+
+.modal__consent button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #041427;
+  color: #ffffff;
+  padding: 15px 25px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  cursor: pointer;
+}
+
+.modal__consent button:hover {
+  opacity: 0.8;
+}
+
+.modal__consent button:focus {
+  background-color: #045e85;
+  outline: 2px solid #023449;
+}
+
+.modal__consent button:active {
+  opacity: 0.7;
 }
 
 .custom-input,
@@ -1535,13 +1595,16 @@ button,
   margin: 0 auto;
   height: 100%;
   max-width: 1300px;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .header__logo {
   display: block;
-  padding-top: 30px;
   min-width: 215px;
+  margin-left: 10px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .header__logo:hover,
@@ -1564,7 +1627,7 @@ button,
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-left: 4.7%;
+  margin-left: 4.1%;
   margin-top: -7px;
 }
 
@@ -1604,12 +1667,11 @@ button,
 .user-list {
   list-style-type: none;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  gap: 6vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 225px 225px;
+  grid-template-columns: 225px 225px;
+  gap: 5.5%;
 }
 
 .user-list__login {
@@ -1620,7 +1682,6 @@ button,
   line-height: 18px;
   display: block;
   color: #f2f5f6;
-  max-width: 225px;
 }
 
 .user-list__login:last-child {
@@ -1628,7 +1689,7 @@ button,
 }
 
 .user-list__text {
-  padding-left: 7px;
+  padding-left: 18px;
 }
 
 .user-list__login-icon {
@@ -1653,13 +1714,13 @@ button,
   min-width: 1024px;
   margin: 0 auto;
   background-color: #041827;
-  padding: 0 18.3% 2%;
+  padding: 0 3% 2%;
 }
 
 .main-footer__container {
   margin: 0 auto;
   height: 100%;
-  max-width: 1300px;
+  max-width: 1215px;
 }
 
 .main-footer__logo {
@@ -1779,7 +1840,7 @@ button,
   min-height: 760px;
   padding-top: 16%;
   background-color: #041827;
-  padding-bottom: 14%;
+  padding-bottom: 14.6%;
   margin-top: -5.4%;
 }
 
@@ -1855,7 +1916,7 @@ button,
 }
 
 .advantages {
-  padding: 7% 1% 6.2%;
+  padding: 6.4% 1% 6.2%;
   background-color: #f8fdff;
 }
 
@@ -1990,7 +2051,7 @@ button,
 
 .product-card {
   background-color: #041827;
-  padding: 3.4% 18.2% 5%;
+  padding: 3.4% 2% 5%;
   min-height: 960px;
 }
 
@@ -2019,9 +2080,11 @@ button,
   gap: 85px;
 }
 
-.product-card li {
+.product-card a {
   position: relative;
   padding: 14% 40% 0 12%;
+  display: block;
+  min-height: 650px;
 }
 
 .product-card img {
@@ -2230,7 +2293,8 @@ button,
 
 .form__modal-auth textarea {
   width: 100%;
-  resize: vertical;
+  overflow: auto;
+  resize: none;
   background-color: #008bc6;
   border: none;
   padding: 22px 15px 40px;
@@ -2304,6 +2368,10 @@ button,
   min-width: 265px;
   text-align: center;
   border: none;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  cursor: pointer;
 }
 
 .form__consent button:hover {
@@ -2331,12 +2399,12 @@ button,
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
-  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin-right: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .form__consent input[type=checkbox]:checked::after {
@@ -2353,6 +2421,7 @@ button,
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .form__consent span {
@@ -2365,6 +2434,7 @@ button,
   display: block;
   margin-bottom: 0;
   padding-top: 15px;
+  cursor: pointer;
 }
 
 .form__inner input:hover {
@@ -2474,6 +2544,15 @@ button,
     display: flex;
   }
 
+  .user-list__login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .footer-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2514,7 +2593,7 @@ button,
     margin: 0 auto;
   }
 
-  .product-card li {
+  .product-card a {
     max-width: 350px;
   }
 
@@ -2580,7 +2659,7 @@ button,
   }
 
   .header__logo {
-    padding-top: 20px;
+    margin-left: 0;
   }
 
   .main-nav {
@@ -2595,6 +2674,11 @@ button,
   }
 
   .user-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 0;
     margin-right: -13px;
     gap: 21px;
@@ -2771,7 +2855,7 @@ button,
     row-gap: 30px;
   }
 
-  .product-card li {
+  .product-card a {
     min-height: 250px;
     padding: 6% 70.6% 0 7%;
   }
@@ -2865,7 +2949,6 @@ button,
   }
 
   .header__logo {
-    padding-top: 15px;
     min-width: 35px;
     height: 35px;
   }
@@ -3062,13 +3145,13 @@ button,
   .advantages__wrapper h3 {
     font-size: 20px;
     line-height: 24px;
-    margin: 6px 0 14px;
+    margin: 6px 0 15px;
   }
 
   .advantages__wrapper p {
     font-size: 14px;
     line-height: 19px;
-    margin-top: -1px;
+    margin-top: -3px;
   }
 
   .advantages__wrapper svg {
@@ -3128,7 +3211,7 @@ button,
     padding-right: 12%;
   }
 
-  .product-card li {
+  .product-card a {
     padding: 9% 39% 0 11%;
   }
 
@@ -3187,7 +3270,13 @@ button,
   }
 
   .form__consent {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-top: 3px;
   }
 
@@ -3203,6 +3292,16 @@ button,
 
   .accordion__element--address {
     position: relative;
+  }
+
+  .accordion__element--address::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100%;
+    left: 0;
+    bottom: 0;
   }
 }
 
