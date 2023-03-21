@@ -1629,6 +1629,7 @@ button,
   justify-content: space-around;
   margin-left: 4.1%;
   margin-top: -7px;
+  padding: 2% 0 4vh;
 }
 
 .main-nav__list {
@@ -1671,7 +1672,9 @@ button,
   display: grid;
   -ms-grid-columns: 225px 225px;
   grid-template-columns: 225px 225px;
-  gap: 5.5%;
+  -webkit-column-gap: 5.5%;
+  -moz-column-gap: 5.5%;
+  column-gap: 5.5%;
 }
 
 .user-list__login {
@@ -2156,13 +2159,12 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 3%;
 }
 
 .form__wrapper-image {
   display: block;
   margin-top: 19.4%;
-  margin-right: 80px;
 }
 
 .form__modal-auth h2 {
@@ -2345,7 +2347,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 49px;
+  gap: 2.5vw;
   padding-top: 9px;
 }
 
@@ -2597,6 +2599,15 @@ button,
     max-width: 350px;
   }
 
+  .form__consent input[type=checkbox] {
+    margin-right: 0;
+    padding-right: 13px;
+  }
+
+  .form__consent span {
+    padding-left: 4%;
+  }
+
   .accordion {
     margin: 0;
     margin-left: 9.5%;
@@ -2667,6 +2678,7 @@ button,
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    padding-top: 4%;
   }
 
   .main-nav__button-link {
@@ -2681,7 +2693,9 @@ button,
     flex-wrap: wrap;
     padding-top: 0;
     margin-right: -13px;
-    gap: 21px;
+    -webkit-column-gap: 21px;
+    -moz-column-gap: 21px;
+    column-gap: 21px;
   }
 
   .user-list__login {
@@ -2960,10 +2974,11 @@ button,
 
   .main-nav {
     min-height: 70px;
+    padding: 2vh 0 2vh;
   }
 
   .user-list {
-    padding-top: 12px;
+    padding-top: 2px;
   }
 
   .main-footer {
@@ -3287,7 +3302,7 @@ button,
   .form__consent button {
     display: block;
     min-width: 270px;
-    margin-bottom: 9px;
+    margin-bottom: -20px;
   }
 
   .accordion__element--address {

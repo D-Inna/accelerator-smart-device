@@ -6,14 +6,17 @@
   justify-content: space-around;
   margin-left: 4.1%;
   margin-top: -7px;
+  padding: 2% 0 4vh;
 
   @media (max-width: $vp-1023) {
     min-height: 100px;
     justify-content: flex-end;
+    padding-top: 4%;
   }
 
   @media (max-width: $vp-767) {
     min-height: 70px;
+    padding: 2vh 0 2vh;
   }
 }
 

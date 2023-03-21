@@ -22,7 +22,7 @@
   min-height: 840px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 3%;
 
   @media (max-width: $vp-1023) {
     display: block;
@@ -40,7 +40,6 @@
 .form__wrapper-image {
   display: block;
   margin-top: 19.4%;
-  margin-right: 80px;
 
   @media (max-width: $vp-1023) {
     display: none;
@@ -202,7 +201,7 @@
 .form__consent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 49px;
+  gap: 2.5vw;
   padding-top: 9px;
 
   @media (max-width: $vp-1023) {
@@ -250,7 +249,7 @@
   @media (max-width: $vp-767) {
     display: block;
     min-width: 270px;
-    margin-bottom: 9px;
+    margin-bottom: -20px;
   }
 }
 
@@ -279,6 +278,11 @@
   margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    margin-right: 0;
+    padding-right: 13px;
+  }
 }
 
 .form__consent input[type="checkbox"]:checked::after {
@@ -304,6 +308,10 @@
   margin-bottom: 0;
   padding-top: 15px;
   cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    padding-left: 4%;
+  }
 
   @media (max-width: $vp-1023) {
     padding-top: 11px;
